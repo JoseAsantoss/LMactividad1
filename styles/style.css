@@ -14,7 +14,7 @@ body {
     height: 100vh;
     overflow: hidden;
     display: grid;
-    grid-template-rows: 2.5fr .5fr 6fr 1.5fr;
+    grid-template-rows: 1.5fr .5fr 6fr 1.5fr;
 }
 
 header {
@@ -38,7 +38,7 @@ header {
     align-items: center;
 }
 
-ul {
+nav ul {
     display: flex;
     width: 100vw;
     flex-direction: row;
@@ -49,20 +49,22 @@ ul {
     overflow: hidden;
 }
 
-li:nth-child(1) {
+/*  QUITAMOS LOS BORDER
+nav li:nth-child(1) {
     border-left: 1px solid #E77218;
 }
+*/
 
-li a {
+nav a {
     text-decoration: none;
     color: #E77218;
     font-weight: 500;
     font-size: 1.2rem;
-    border-right: 1px solid #E77218;
-    padding: 1rem;
+    /* border-right: 1px solid #E77218; */
+    padding: 1rem 2rem 1rem 2rem;
 }
 
-li a:hover {
+nav a:hover {
     color: #FAFAFA;
 }
 
@@ -86,4 +88,94 @@ footer {
     grid-row: 4 / 6;
     background-color: #1A3451;
     color: #FAFAFA;
+}
+
+.footer-section-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.fa {
+    padding: .5rem;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 1rem;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+  
+.footer-section-2 {
+    margin-top: 1rem;
+}
+
+.footer-section-2 ul {
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.footer-section-2 a {
+    text-decoration: none;
+    color: #D9D9D9;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.footer-section-2 a:hover {
+    color: #E77218;
+}
+
+.footer-section-3 {
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
 }
