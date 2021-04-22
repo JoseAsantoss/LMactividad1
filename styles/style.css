@@ -83,6 +83,11 @@ aside {
     grid-column: 2 / 3;
     background-color: #D9D9D9;
 }
+/* MIGUE */
+.aside-section {
+    grid-template-rows: repeat (3, 2fr);
+    grid-row: 1 / 2;
+}
 
 footer {
     grid-row: 4 / 6;
