@@ -91,14 +91,23 @@ aside.noticias {
 }
 
 .noticias article {
-    display: grid;
-    grid-template-columns: repeat (2, 5fr);
-    grid-template-rows: repeat (2, 5fr);
+    display: flex;
+    padding: .5rem;
 }
 
 .noticias img {
-    width: 5rem;
-    float: left;
+    width: 7rem;
+    /* height: 7rem; */
+}
+
+.texto-noticia {
+    margin: 0 .5rem;
+    font-weight: lighter;
+}
+
+.texto-noticia h4 {
+    
+    font-weight: 900;
 }
 
 footer {
