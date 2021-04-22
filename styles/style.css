@@ -80,13 +80,25 @@ main {
 }
 
 aside {
-    grid-column: 2 / 3;
+    grid-column: 2 / 3; /* posicionamiento respecto al grid principal*/
     background-color: #D9D9D9;
 }
+
 /* MIGUE */
-.aside-section {
+aside.noticias {
+    display: grid;
     grid-template-rows: repeat (3, 2fr);
-    grid-row: 1 / 2;
+}
+
+.noticias article {
+    display: grid;
+    grid-template-columns: repeat (2, 5fr);
+    grid-template-rows: repeat (2, 5fr);
+}
+
+.noticias img {
+    width: 5rem;
+    float: left;
 }
 
 footer {
