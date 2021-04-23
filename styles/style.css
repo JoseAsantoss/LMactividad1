@@ -205,3 +205,12 @@ footer {
     justify-content: center;
     margin-top: 2.5rem;
 }
+/*********************/
+/* Sección contacto  */
+/*********************/
+
+.contacto{
+    display: grid;
+    grid-column: 6;
+    grid-row: 6;
+}
