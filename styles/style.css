@@ -336,7 +336,7 @@ footer {
 
 .quienes-somos {
     background-image: url("../images/fondo-qs.jpg");
-    height: 40vh;
+    height: 30vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -430,6 +430,36 @@ footer {
     color: #FAFAFA;
     font-weight: 200;
     margin-bottom: 2rem;
+}
+
+.quienes-somos-2 {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quienes-somos-2 article {
+    background-color: #FAFAFA;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    width: 50%;
+    border: 2px solid #1A3451;
+    box-shadow: .5rem .5rem .5rem .2rem rgba(11, 10, 44, 0.4);
+    text-align: justify;
+}
+
+.quienes-somos-2 h3 {
+    font-size: 1.5rem;
+    color: #E77218;
+    margin-bottom: .5rem;
+    font-weight: 400;
+}
+
+.quienes-somos-2 p {
+    color: #1A3451;
+    margin-top: 1rem;
 }
 
 /*******************************************/
