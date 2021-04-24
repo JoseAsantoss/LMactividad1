@@ -88,7 +88,101 @@ main {
     letter-spacing: .3rem;
     animation: izquierda-derecha 1s ease-out;
 }
+/* servicios */
 
+.main-servicios{
+    display: grid;
+    grid-template-columns: 1fr, 4fr, 1fr;
+    row-gap: 2rem;
+    background-color:  #edecec;
+}
+.texto-presentacion h1{
+    color: #1A3451;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 2rem;
+    letter-spacing: .3rem;
+}
+.texto-presentacion h2{
+    color: #d78444;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;   
+    margin-top: .5rem;
+}
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}   
+.tarjeta{
+    box-shadow: 0px 2px 2px #acabab;
+    border-radius: 8px;
+}
+.tarjeta:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px #acabab;
+    transition: .3s ease-in-out;
+}
+
+.tarjeta img {
+    width: 100%;
+ }
+ .tarjeta h4{
+    text-decoration: none;
+    color: #1A3451;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 1rem 2rem 1rem 2rem;
+    text-align: center;
+ }
+.tarjeta p{
+    color: #1A3451;
+    font-weight: 400;
+    font-size: 0.9rem;
+    padding: 1rem 2rem 1rem 2rem;
+    text-align: justify;
+}
+.tarjeta a{
+    text-decoration: none;
+    color: #E77218;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: flex;
+    text-align: justify;
+    justify-content:center;
+    padding: 1rem;
+}
+.texto-cierre{
+    display: flex;
+    justify-content: center;
+    color: #1A3451;
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 1.5rem;
+}
+.boton-formulario{
+    text-decoration: none;
+    border-style: solid;
+    border-color: #1A3451;
+    background-color:  #1A3451;
+    border-radius: 5px;
+    color: #E77218;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    
+}
+.boton-formulario:hover{
+    background-color:   #D9D9D9;
+    border-style: solid;
+    border-color: #E77218;
+    color: #1A3451;
+}
+/*servicios*/
 /* Animación para el h1 */
 @keyframes izquierda-derecha {
     0% {
