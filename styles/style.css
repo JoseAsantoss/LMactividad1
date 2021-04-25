@@ -85,100 +85,109 @@ nav a:hover {
     letter-spacing: .3rem;
     animation: izquierda-derecha 1s ease-out;
 }
-/* servicios */
-
+/****************************/
+/* Sección Servicios - Raúl*/
+/****************************/
 .main-servicios{
-    display: grid;
-    grid-template-columns: 1fr, 4fr, 1fr;
-    row-gap: 2rem;
-    background-color:  #edecec;
+    background-color: #d5d3d3;
 }
+
 .texto-presentacion h1{
     color: #1A3451;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 500;
     text-align: center;
-    margin-top: 2rem;
+    padding-top: 2rem;
     letter-spacing: .3rem;
 }
 .texto-presentacion h2{
-    color: #d78444;
-    font-size: 1.5rem;
+    color: #E77218;
+    font-size: 1.2rem;
     font-weight: 400;
     font-style: italic;
-    text-align: center;   
+    text-align: center;
     margin-top: .5rem;
 }
 .tarjetas {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-}   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5rem;
+    width: 100vw;
+}
 .tarjeta{
-    box-shadow: 0px 2px 2px #acabab;
-    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    width: 20rem;
+    margin: 3rem 6rem 1rem 6rem;
+    background-color: #1A3451; 
+    border-radius: 1.5rem;
+    text-align: justify;
+    justify-content: center;
+    box-shadow: .5rem .5rem .5rem .2rem rgba(11, 10, 44, 0.4);
 }
 .tarjeta:hover{
     transform: translateY(-15px);
-    box-shadow: 0 12px 16px #acabab;
+    box-shadow: .5rem .5rem .5rem .2rem rgba(11, 10, 44, 0.4);
     transition: .3s ease-in-out;
 }
-
-.tarjeta img {
-    width: 100%;
- }
- .tarjeta h4{
-    text-decoration: none;
-    color: #1A3451;
-    font-weight: 500;
-    font-size: 1.1rem;
-    padding: 1rem 2rem 1rem 2rem;
+.tarjetas h4{
+    color: #E77218;
     text-align: center;
- }
+    margin: 1.5rem;
+}
 .tarjeta p{
-    color: #1A3451;
-    font-weight: 400;
+    color: #FAFAFA;
     font-size: 0.9rem;
-    padding: 1rem 2rem 1rem 2rem;
-    text-align: justify;
+    margin: 1.5rem;
+}
+.tarjeta img{
+    height: 40%;
+    border-bottom: 2px solid #E77218;
+    border-top: 2px solid #E77218;
 }
 .tarjeta a{
-    text-decoration: none;
     color: #E77218;
-    font-weight: 400;
-    font-size: 0.9rem;
-    display: flex;
-    text-align: justify;
-    justify-content:center;
-    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-top: 2px solid #E77218;
+    padding: 0.5rem;
+}
+.tarjeta a:hover{
+    color: #FAFAFA;
 }
 .texto-cierre{
     display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
     justify-content: center;
-    color: #1A3451;
-    font-weight: 400;
+    align-items: center;
+}
+.texto-cierre p{
     font-size: 2rem;
-    padding: 1.5rem;
-}
-.boton-formulario{
-    text-decoration: none;
-    border-style: solid;
-    border-color: #1A3451;
-    background-color:  #1A3451;
-    border-radius: 5px;
-    color: #E77218;
-    font-weight: 400;
-    font-size: 1.2rem;
-    padding: 0.5rem;
-    margin-left: 1rem;
-    
-}
-.boton-formulario:hover{
-    background-color:   #D9D9D9;
-    border-style: solid;
-    border-color: #E77218;
     color: #1A3451;
+    letter-spacing: .2rem;
 }
+.texto-cierre a{
+    text-decoration: none;
+    color:#E77218;
+    background-color: #1A3451;
+    border-style: solid;
+    border-color:  #1A3451;
+    border-radius: 1rem;
+    padding: .3rem;
+    margin-left: 0.5rem;
+}
+.texto-cierre a:hover{
+    color:  #1A3451;
+    background-color: #E77218;
+}
+
+
+*/
 /*servicios*/
 /* Animación para el h1 */
 @keyframes izquierda-derecha {
