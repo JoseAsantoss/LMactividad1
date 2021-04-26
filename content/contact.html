@@ -13,13 +13,13 @@
     </head>
     <body class="container">
         <header>
-            <a href="index.html">
-                <img class="logo-header" src="images/logo-svg.svg" alt="logo TERRITORIO WEB">
+            <a href="/index.html">
+                <img class="logo-header" src="/images/logo-svg.svg" alt="logo TERRITORIO WEB">
             </a>
         </header>
         <nav class="navbar">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="/index.html">Inicio</a></li>
                 <li><a href="/content/servicios.html">Servicios</a></li>
                 <li><a href="/content/cursos.html">Cursos</a></li>
                 <li><a href="/content/about.html">Quiénes somos</a></li>
@@ -27,32 +27,34 @@
             </ul>
         </nav>
     
-        <main class="">
-            <form class="formulario" method="POST" action="#">
-                <label for="nomb</header>re">
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+        <main class="main-contacto">
+            <form class="simple-form" method="POST" action="#">
+                <h2 class="simple-form">Formulario de contacto</h2>
+                <label for="nombre">
+                    <input type="text" class="sp-form" name="nombre" id="nombre" placeholder="Nombre" required>
                 </label>
                 <label for="email">
-                    <input type="email" name="email" id="email" placeholder="e-mail" required>
+                    <input type="email" class="sp-form" name="email" id="email" placeholder="e-mail" required>
                 </label>
                 <label for="telefono">
-                    <input type="tel" name="telefono" id="telefono" placeholder="912345678">
+                    <input type="tel" class="sp-form" name="telefono" id="telefono" placeholder="Teléfono">
                 </label>
                 <label for="texto">
-                    <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Escribe aquí tu consulta..."></textarea>
+                    <textarea class="sp-form" name="texto" id="texto" cols="30" rows="8" placeholder="Escribe aquí tu consulta..."></textarea>
                 </label>
-                <input type="reset" value="Borrar">
-                <input type="submit" value="Enviar" disabled>
+                <input class="button" type="reset" value="Borrar">
+                <input class="button" type="submit" value="Enviar" disabled>
             </form>
-            <section>
-                <ul>
-                    <li>Calle Bruno Abundez, 48</li>
-                    <li>28031 - Madrid</li>
-                    <li>912345678</li>
+            <section class="flex1">
+                <ul class="dir">
+                    <li class="dir">Calle Bruno Abundez, 48</li>
+                    <li class="dir">28031 - Madrid</li>
+                    <li class="dir">912345678</li>
                 </ul>
+
+                <iframe class="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1LE5XXixJ34JecorrHz2wLdDFEsg5Du7U" width="95%" height="76%"></iframe>
             </section>
-            <section class="mapa">
-                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1LE5XXixJ34JecorrHz2wLdDFEsg5Du7U" width="98%" height="480"></iframe>
+                
             </section>  
         </main>
     
