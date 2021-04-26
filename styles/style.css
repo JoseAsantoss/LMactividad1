@@ -455,13 +455,11 @@ footer {
     margin: 3rem;
 }
 /*********************/
-/* Sección contacto  */
+/* Sección contacto - Jose Antonio  */
 /*********************/
 
 .contacto{
-    display: grid;
-    grid-column: 6;
-    grid-row: 6;
+    
 }
 
 
