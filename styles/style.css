@@ -71,21 +71,7 @@ nav a:hover {
     color: #FAFAFA;
 }
 
-<<<<<<< HEAD
-=======
 /* Sección principal */
-
-.index-main {
-    display: grid;
-    grid-template-columns: 4fr 1.2fr;
-    grid-row: 3 / 4;
-    background-color: #edecec;
-}
-
-.main-section:first-child {
-    height: 20rem;
-
-}
 
 .main-section h1, 
 .quienes-somos h1 {
@@ -141,7 +127,6 @@ nav a:hover {
     }
 }
 
->>>>>>> a4c8ad2689ea8e33550f108d3855f33b1f113efa
 /****************************/
 /* Sección Servicios - Raúl*/
 /****************************/
@@ -243,58 +228,9 @@ nav a:hover {
     background-color: #E77218;
 }
 
-<<<<<<< HEAD
-
-*/
-/*servicios*/
-/* Animación para el h1 */
-@keyframes izquierda-derecha {
-    0% {
-        opacity: 0;
-        transform: translateX(-3rem);
-    }
-    80% {
-        transform: translateX(1rem);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-.main-section h2,
-.quienes-somos h2 {
-    color: #E77218;
-    font-size: 1.2rem;
-    font-weight: 400;
-    font-style: italic;
-    text-align: center;
-    animation: derecha-izquierda 1s ease-out;
-    text-transform: uppercase;
-    margin-top: .5rem;
-}
-
-/* Animación para el h2 */
-@keyframes derecha-izquierda {
-    0% {
-        opacity: 0;
-        transform: translateX(3rem);
-    }
-    80% {
-        transform: translateX(-1rem);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
 /*********************/
 /* Sección INICIO - Migue */
 /*********************/
-=======
-/* Sección aside */
->>>>>>> a4c8ad2689ea8e33550f108d3855f33b1f113efa
 
 .main-index {
     display: grid;
@@ -305,17 +241,6 @@ nav a:hover {
 
 .main-index:first-child {
     height: 20rem;
-}
-
-.main-section h1, 
-.quienes-somos h1 {
-    color: #1A3451;
-    font-size: 4rem;
-    font-weight: 900;
-    text-align: center;
-    padding-top: 2rem;
-    letter-spacing: .3rem;
-    animation: izquierda-derecha 1s ease-out;
 }
 
 .main-section img{
@@ -334,6 +259,11 @@ nav a:hover {
     font-weight: 400;
     text-align: justify;
     margin-top: 1rem;
+    /* line-height: 3rem; */
+}
+
+br {
+    margin-bottom: 1.2rem;
 }
 
 .prueba {
@@ -357,7 +287,6 @@ nav a:hover {
     margin-top: 1rem;
 
 }
-
 
 /* Sección aside */
 aside {
