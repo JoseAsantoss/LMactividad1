@@ -430,7 +430,7 @@ footer {
 }
 
 .quienes-somos-2 {
-    background-image: url("../images/fondo-qs-4.png");
+    background-image: url("../images/fondo-qs-3.jpeg");
     background-color: #777880;
     background-blend-mode: screen;
     display: flex;
@@ -471,7 +471,7 @@ footer {
 }
 
 .seccion-tarjetas {
-    background-image: url("../images/fondo-qs-2.jpg");
+    background-image: url("../images/fondo-qs-4.png");
     background-color: #777880;
     background-blend-mode: screen;
     padding: 10rem 0;
