@@ -391,7 +391,7 @@ footer {
 /*estilos para el contenedor main que engloba
 todos los elementos que están dentro del mismo*/
 .contenedor{
-    background-image: url(/images/fondo-qs-3.jpeg);
+    background-image: url(../images/fondo-qs-3.jpeg);
     background-size: 100vm 100vh;
     background-attachment: fixed;
     margin: 0;
