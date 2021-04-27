@@ -394,7 +394,9 @@ todos los elementos que están dentro del mismo*/
     background-image: url(../images/fondo-qs-3.jpeg);
     background-size: 100vm 100vh;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     margin: 0;
+    
 }
 .contacto-grid {
     display: grid;
@@ -402,6 +404,7 @@ todos los elementos que están dentro del mismo*/
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
+    background-color: rgba(255,255,255,0.4);
 }
 
 /*Estilos para el apartado mapa*/
