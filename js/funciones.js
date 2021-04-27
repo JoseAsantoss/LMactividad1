@@ -1,0 +1,3 @@
+validaNombre(){
+    var
+}

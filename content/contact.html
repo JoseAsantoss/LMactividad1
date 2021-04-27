@@ -10,6 +10,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+        <script src="/js/validacion.js"></script>
     </head>
     <body class="container">
         <header>
@@ -27,35 +30,34 @@
             </ul>
         </nav>
     
-        <main class="main-contacto">
-            <form class="simple-form" method="POST" action="#">
+        <main class="contacto-grid">
+            <section class="mapa">
+                <iframe class="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1LE5XXixJ34JecorrHz2wLdDFEsg5Du7U" frameborder="0"></iframe>
+            </section>                    
+            <form class="simple-form" id="formulario" name="consulta" action="">
                 <h2 class="simple-form">Formulario de contacto</h2>
                 <label for="nombre">
-                    <input type="text" class="sp-form" name="nombre" id="nombre" placeholder="Nombre" required>
+                    <input maxlength="50" type="text" class="sp-form" name="nombre" id="nombre" autofocus placeholder="Nombre - Campo obligatorio" required>
                 </label>
                 <label for="email">
-                    <input type="email" class="sp-form" name="email" id="email" placeholder="e-mail" required>
+                    <input type="email" class="sp-form" name="email" id="email" placeholder="e-mail - Campo obligatorio" required>
                 </label>
                 <label for="telefono">
-                    <input type="tel" class="sp-form" name="telefono" id="telefono" placeholder="Teléfono">
+                    <input type="tel" class="sp-form" name="telefono" id="telefono" pattern="[0-9]{9}"placeholder="Teléfono">
                 </label>
                 <label for="texto">
-                    <textarea class="sp-form" name="texto" id="texto" cols="30" rows="8" placeholder="Escribe aquí tu consulta..."></textarea>
+                    <textarea class="sp-form" name="texto" id="texto" cols="30" rows="8" placeholder="Escribe aquí tu consulta...(Campo obligatorio)" required></textarea>
                 </label>
                 <input class="button" type="reset" value="Borrar">
                 <input class="button" type="submit" value="Enviar" disabled>
-            </form>
-            <section class="flex1">
-                <ul class="dir">
-                    <li class="dir">Calle Bruno Abundez, 48</li>
-                    <li class="dir">28031 - Madrid</li>
-                    <li class="dir">912345678</li>
+            </form> 
+            <section class="dir-grid">
+                <ul>
+                    <li>Calle Bruno Abundez, 48</li>
+                    <li>28031 - Madrid</li>
+                    <li>912345678</li>
                 </ul>
-
-                <iframe class="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1LE5XXixJ34JecorrHz2wLdDFEsg5Du7U" width="95%" height="76%"></iframe>
             </section>
-                
-            </section>  
         </main>
     
         <footer>
