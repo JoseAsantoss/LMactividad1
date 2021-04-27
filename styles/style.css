@@ -390,15 +390,18 @@ footer {
 /*********************/
 /*estilos para el contenedor main que engloba
 todos los elementos que están dentro del mismo*/
-.contacto-grid {
+.contenedor{
     background-image: url(/images/fondo-qs-3.jpeg);
     background-size: 100vm 100vh;
     background-attachment: fixed;
     margin: 0;
+}
+.contacto-grid {
     display: grid;
     flex-wrap: wrap;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
 }
 
 /*Estilos para el apartado mapa*/
@@ -410,7 +413,6 @@ todos los elementos que están dentro del mismo*/
     height: 99%;
     max-height: 100%;
     min-height: 50%;
-    border: 0;
     border-radius: 30px;
     border-color: inherit;
     padding: 6px;
@@ -457,7 +459,7 @@ textarea.sp-form:focus {
 
 textarea.sp-form {
     min-height: 100px;
-    max-height: 200px;
+    max-height: 150px;
     max-width: 100%;
     resize: unset;
 }
@@ -474,6 +476,7 @@ input.button {
     color: #E77218;
     font-family: inherit;
     font-size: 1.2rem;
+    font-weight: bold;
     text-align: center;
     border: none;
     border-radius: 7px;
@@ -499,8 +502,7 @@ input.button:disabled{
 
 /*Estilos para el apartado dirección*/
 section.dir-grid{
-    flex: 2;
-    width: 40%;
+    width: 100%;
     margin-right: 2%;
 }
 
@@ -512,13 +514,21 @@ section.dir-grid ul{
 
 section.dir-grid li {
     list-style: none;
-    font-family: inherit;
-    size: 1.5rem;
-    font-weight: bold;
 }
 
+section.dir-imagen {
+    width: 80%;
+    padding: 20px;
+    margin-top: 12vh;
+    margin-left: 6vw;
+}
 
-
+section.direc {
+    width: 100%;
+    font-family: inherit;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
 
 /*********************/
 /* Sección Quiénes Somos - Álvaro */
