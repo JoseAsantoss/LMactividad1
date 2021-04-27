@@ -36,13 +36,16 @@
                     <h2 class="simple-form">Formulario de contacto</h2>
                     <div class="form-box">
                         <label for="nombre"></label>
-                        <input maxlength="50" type="text" class="sp-form" name="nombre" id="nombre" autofocus placeholder="Nombre - Campo obligatorio" required>
+                        <input maxlength="50" type="text" class="sp-form" name="nombre" id="nombre" autofocus placeholder="Nombre - Campo obligatorio" pattern="[a-zA-Z]" required>
                         <small class="error-text" hidden>Introduce un nombre correcto</small>
                     </div>
-                    
-                    <label for="email">
+                    <div class="form-box">
+                        <label for="email"></label>
                         <input type="email" class="sp-form" name="email" id="email" placeholder="e-mail - Campo obligatorio" required>
-                    </label>
+                        <small class="error-text" hidden>Introduce un e-mail correcto</small>
+                    </div>
+                    
+                    
                     <label for="telefono">
                         <input type="tel" class="sp-form" name="telefono" id="telefono" pattern="[0-9]{9}"placeholder="Teléfono">
                     </label>
