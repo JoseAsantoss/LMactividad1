@@ -10,12 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="../images/svg/icono.svg" sizes="any">
 </head>
+<!-- La etiqueta body tendrá la clase "container" para la distribución del grid principal -->
 <body class="container">
     <header>
+        <!-- Logotipo de la empresa que enlazará al index.html si se clica -->
         <a href="index.html">
             <img class="logo-header" src="../images/logo-svg.svg" alt="logo TERRITORIO WEB">
         </a>
     </header>
+    <!-- Navbar con enlaces a todas las secciones de la página -->
     <nav class="navbar">
         <ul>
             <li><a href="../index.html">Inicio</a></li>
@@ -25,25 +28,25 @@
             <li><a href="contact.html">Contacto</a></li>
         </ul>
     </nav>
-
+    <!-- Etiqueta main que englobará el contenido principal de la página -->
     <main class="main-quienes-somos">
+        <!-- Sección principal de la página -->
         <section class="quienes-somos">
-                <h1>QUIÉNES SOMOS</h1>
-                <h2>Conoce a nuestro equipo</h2>
-
-                <article>
-                    <h3>TERRITORIO WEB</h3>
-                    <p> Nuestra empresa nace en el año 2020, de la mano de un equipo de cuatro programadores y desarrolladores web 
-                        con una meta común: aunar nuestra pasión por el desarrollo y ofrecer los mejores servicios y cursos a 
-                        nuestros clientes.
-                    </p>
-                </article>
+            <h1>QUIÉNES SOMOS</h1>
+            <h2>Conoce a nuestro equipo</h2>
+            <article>
+                <h3>TERRITORIO WEB</h3>
+                <p> Nuestra empresa nace en el año 2020, de la mano de un equipo de cinco programadores y desarrolladores web 
+                    con una meta común: aunar nuestra pasión por el desarrollo y ofrecer los mejores servicios y cursos a 
+                    nuestros clientes.
+                </p>
+            </article>
         </section>
-
+        
         <section class="separador">
             <h2>Comprometidos con nuestros clientes</h2>
         </section>
-
+        <!-- Sección con los valores de la empresa -->
         <section class="quienes-somos-2">
             <article>
                 <h3>NUESTROS VALORES</h3>
@@ -57,8 +60,9 @@
         <section class="separador">
             <h2>A la vanguardia de la tecnología</h2>
         </section>
-
+        <!-- Sección con tarjetas que voltean, con información de los cinco integrantes de Territorio Web -->
         <section class="seccion-tarjetas">
+            <!-- Tarjeta 1 -->
             <article class="contenedor-tarjeta">
                 <div class="tarjeta-qs">
                     <div class="tarjeta-delante-qs">
@@ -78,7 +82,7 @@
                     </div>
                 </div>
             </article>
-
+            <!-- Tarjeta 2 -->
             <article class="contenedor-tarjeta">
                 <div class="tarjeta-qs">
                     <div class="tarjeta-delante-qs">
@@ -97,7 +101,7 @@
                     </div>
                 </div>
             </article>
-
+            <!-- Tarjeta 3 -->
             <article class="contenedor-tarjeta">
                 <div class="tarjeta-qs">
                     <div class="tarjeta-delante-qs">
@@ -116,7 +120,7 @@
                     </div>
                 </div>
             </article>
-
+            <!-- Tarjeta 4 -->
             <article class="contenedor-tarjeta">
                 <div class="tarjeta-qs">
                     <div class="tarjeta-delante-qs">
@@ -135,12 +139,30 @@
                     </div>
                 </div>
             </article>
+            <!-- Tarjeta 5 -->
+            <article class="contenedor-tarjeta">
+                <div class="tarjeta-qs">
+                    <div class="tarjeta-delante-qs">
+                        <img src="../images/prueba-tarjeta.png" alt="trabajador">
+                        <h3>Miguel Ángel</h3>
+                        <p>Cursos que imparte</p>
+                        <p>Servicios</p>
+                    </div>
+                    <div class="tarjeta-detras-qs">
+                        <h3>Sígueme en</h3>
+                        <div>
+                            <a href="#"><img src="../images/svg/facebook-f-brands.svg" alt="icono facebook" class="icono-redes"></a>
+                            <a href="#"><img src="../images/svg/twitter-brands.svg" alt="icono twitter" class="icono-redes"></a>
+                            <a href="#"><img src="../images/svg/instagram-brands.svg" alt="icono instagram" class="icono-redes"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </section>
-
-
     </main>
-
+    <!-- Footer compuesto de tres secciones -->
     <footer>
+        <!-- Sección 1 del footer con iconos que enlazan a redes sociales -->
         <section class="footer-section-1">
             <a href="#"><img src="../images/svg/facebook-f-brands.svg" alt="icono facebook" class="icono-redes"></a>
             <a href="#"><img src="../images/svg/twitter-brands.svg" alt="icono twitter" class="icono-redes"></a>
@@ -148,7 +170,7 @@
             <a href="#"><img src="../images/svg/instagram-brands.svg" alt="icono instagram" class="icono-redes"></a>
             <a href="#"><img src="../images/svg/youtube-brands.svg" alt="icono youtube" class="icono-redes"></a>
         </section>
-       
+       <!-- Sección 2 del footer con enlaces a las políticas de la empresa -->
         <section class="footer-section-2">
             <ul>
                 <li><a href="#">Términos y condiciones</a></li>
@@ -156,7 +178,7 @@
                 <li><a href="#">Política de privacidad</a></li>
             </ul>
         </section>
-
+        <!-- Sección 3 del footer con el copyright -->
         <section class="footer-section-3">
             <p>&copy; Copyright 2021. Todos los derechos reservados.</p>
         </section>
