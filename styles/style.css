@@ -890,6 +890,12 @@ button.boton:hover {
   .textoCurso>h4{
       font-weight: lighter;
   }
+#seccion-video-cursos{
+    margin-top: 3rem;
+}
+  #video-cursos{
+      width:40rem;
+  }
   /*
   .botonCurso{
 
