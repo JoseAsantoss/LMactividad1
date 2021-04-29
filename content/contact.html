@@ -12,77 +12,91 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script defer src="../js/form.js"></script>
     </head>
-    <body class="container">
-        <header>
-            <a href="index.html">
-                <img class="logo-header" src="../images/logo-svg.svg" alt="logo TERRITORIO WEB">
-            </a>
-        </header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="about.html">Quiénes somos</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
-        </nav>
-    
-        <main class="contenedor">
-            <section class="contacto-grid">
-                <section class="mapa">
-                    <iframe class="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1LE5XXixJ34JecorrHz2wLdDFEsg5Du7U" frameborder="0"></iframe>
-                </section>                    
-                <form class="simple-form" id="formulario" name="consulta" action="">
-                    <h2 class="simple-form">Formulario de contacto</h2>
-                    <label for="nombre"></label>
-                    <input maxlength="20" type="text" class="sp-form" name="nombre" id="nombre" autofocus placeholder="Nombre - Campo obligatorio" required>
+    <!-- La etiqueta body tendrá la clase "container" para la distribución del grid principal -->
+<body class="container">
+    <header>
+        <!-- Logotipo de la empresa que enlazará al index.html si se clica -->
+        <a href="index.html">
+            <img class="logo-header" src="../images/logo-svg.svg" alt="logo TERRITORIO WEB">
+        </a>
+    </header>
+    <!-- Navbar con enlaces a todas las secciones de la página -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="about.html">Quiénes somos</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- Etiqueta main que englobará el contenido principal de la página -->
+    <main class="contenedor">
+        <!-- Sección que hace de contenedor global para manejar el grid -->
+        <section class="contacto-grid">
+            <!-- Sección para el mapa de localización-->
+            <section class="mapa">
+                <iframe class="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1LE5XXixJ34JecorrHz2wLdDFEsg5Du7U" frameborder="0"></iframe>
+            </section> 
+            <!-- Formulario de contacto -->                   
+            <form class="simple-form" id="formulario" name="consulta" action="">
+                <h2 class="simple-form">Formulario de contacto</h2>
+                <label for="nombre"></label>
+                <input maxlength="20" type="text" class="sp-form" name="nombre" id="nombre" autofocus placeholder="Nombre - Campo obligatorio" required>
 
-                    <label for="email"></label>
-                    <input type="email" class="sp-form" name="email" id="email" placeholder="e-mail - Campo obligatorio" required>
-                    <small class="error-text" hidden>Introduce un e-mail correcto</small>
-                    <label for="telefono"></label>
-                    <input type="tel" class="sp-form" name="telefono" id="telefono" placeholder="Teléfono movil">
-                    <label for="texto"></label>
-                    <textarea class="sp-form" name="texto" id="texto" cols="30" rows="8" placeholder="Escribe aquí tu consulta...(Campo obligatorio)" required></textarea>
-                    <input class="button" type="reset" value="Borrar">
-                    <input class="button" type="submit" id="submit-btn" value="Enviar" disabled>
-                </form> 
-                <section class="dir-grid">
-                    <section class="dir-imagen">
-                        <img src="../images/logo-svg.svg" alt="Logo Territorio Web">
-                    </section>
-                    <section class="direc">
-                        <ul>
-                            <li>Calle Bruno Abundez, 48</li>
-                            <li>28031 - Madrid</li>
-                            <li>912345678</li>
-                        </ul>
-                    </section> 
+                <label for="email"></label>
+                <input type="email" class="sp-form" name="email" id="email" placeholder="e-mail - Campo obligatorio" required>
+                <small class="error-text" hidden>Introduce un e-mail correcto</small>
+                <label for="telefono"></label>
+                <input type="tel" class="sp-form" name="telefono" id="telefono" placeholder="Teléfono movil">
+                <label for="texto"></label>
+                <textarea class="sp-form" name="texto" id="texto" cols="30" rows="8" placeholder="Escribe aquí tu consulta...(Campo obligatorio)" required></textarea>
+                <input class="button" type="reset" value="Borrar">
+                <input class="button" type="submit" id="submit-btn" value="Enviar" disabled>
+            </form> 
+            <!-- Sección para detallar la direccion física -->
+            <section class="dir-grid">
+                <section class="dir-imagen">
+                    <img src="../images/logo-svg.svg" alt="Logo Territorio Web">
+                </section>
+                <section class="direc">
+                    <ul>
+                        <li>Calle Bruno Abundez, 48</li>
+                        <li>28031 - Madrid</li>
+                        <li><a href="tel:#" title="teléfono de la empresa">912345678</a></li>
+                    </ul>
+                </section> 
+                <!-- Sección para establecer un acceso al formulario completo de información de cursos-->
+                <section class="formCursos">
+                    <H2 class="">¿Quieres información de nuestros curos?</H2>
+                    <button class="boton" type="button" title="Pide Información de nuestros cursos"><a href="#" title="acceso a formulario cursos"></a>PINCHA AQUÍ</button></a>
                 </section>
             </section>
-        </main>
+        </section>
+    </main>
     
-        <footer>
-            <section class="footer-section-1">
-                <a href="#"><img src="../images/svg/facebook-f-brands.svg" alt="icono facebook" class="icono-redes"></a>
-                <a href="#"><img src="../images/svg/twitter-brands.svg" alt="icono twitter" class="icono-redes"></a>
-                <a href="#"><img src="../images/svg/pinterest-brands.svg" alt="icono pinterest" class="icono-redes"></a>
-                <a href="#"><img src="../images/svg/instagram-brands.svg" alt="icono instagram" class="icono-redes"></a>
-                <a href="#"><img src="../images/svg/youtube-brands.svg" alt="icono youtube" class="icono-redes"></a>
-            </section>
-           
-            <section class="footer-section-2">
-                <ul>
-                    <li><a href="#">Términos y condiciones</a></li>
-                    <li><a href="#">Trabaja con nosotros</a></li>
-                    <li><a href="#">Política de privacidad</a></li>
-                </ul>
-            </section>
-    
-            <section class="footer-section-3">
-                <p>&copy; Copyright 2021. Todos los derechos reservados.</p>
-            </section>
-        </footer>
+    <!-- Footer compuesto de tres secciones -->
+    <footer>
+        <!-- Sección 1 del footer con iconos que enlazan a redes sociales -->
+        <section class="footer-section-1">
+            <a href="#"><img src="../images/svg/facebook-f-brands.svg" alt="icono facebook" class="icono-redes"></a>
+            <a href="#"><img src="../images/svg/twitter-brands.svg" alt="icono twitter" class="icono-redes"></a>
+            <a href="#"><img src="../images/svg/pinterest-brands.svg" alt="icono pinterest" class="icono-redes"></a>
+            <a href="#"><img src="../images/svg/instagram-brands.svg" alt="icono instagram" class="icono-redes"></a>
+            <a href="#"><img src="../images/svg/youtube-brands.svg" alt="icono youtube" class="icono-redes"></a>
+        </section>
+       <!-- Sección 2 del footer con enlaces a las políticas de la empresa -->
+        <section class="footer-section-2">
+            <ul>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Trabaja con nosotros</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+            </ul>
+        </section>
+        <!-- Sección 3 del footer con el copyright -->
+        <section class="footer-section-3">
+            <p>&copy; Copyright 2021. Todos los derechos reservados.</p>
+        </section>
+    </footer>
     </body>
 </html>

@@ -1,0 +1,8 @@
+Sitios que he consultado para realizar el formulario de contacto:
+https://www.youtube.com/watch?v=OwdYwteGt2U --> Navis Code
+https://www.youtube.com/watch?v=FEnRpy9Xfes&list=PLbSquHt1VCf1x_-1ytlVMT0AMwADlWtc1 --> Layout Land
+https://www.w3schools.com/
+https://developer.mozilla.org/es/
+https://developer.mozilla.org/es/docs/Web/JavaScript
+https://www.regextester.com/97987 --> Para expresesión regular Nombre y apellido
+https://www.regextester.com/ --> Para comprobar expresiones regulares
