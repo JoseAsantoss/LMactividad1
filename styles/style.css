@@ -865,12 +865,12 @@ button.boton:hover {
     max-width: 10rem;
     max-height: 10rem;
     border-radius: 1rem;
-    animation-name: animacionImgCursos;
+    animation-name: animacionCursos;
     animation-duration: 3s;
     
-
   }
-  @keyframes animacionImgCursos {
+  
+  @keyframes animacionCursos {
     from {opacity: 0;}
     to {opacity: 1;}
 }
@@ -891,10 +891,14 @@ button.boton:hover {
       font-weight: lighter;
   }
 #seccion-video-cursos{
-    margin-top: 3rem;
+    margin: 3rem;
+    animation-name: animacionCursos;
+    animation-duration: 3s;
 }
   #video-cursos{
       width:40rem;
+      box-shadow: 0px 0px 30px rgb(41, 41, 41);
+
   }
   /*
   .botonCurso{
