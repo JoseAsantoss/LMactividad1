@@ -939,7 +939,7 @@ button.boton:hover {
     justify-content: space-between;
     background-color: rgb(26, 52, 81);
     margin: 0 5rem;
-    border-radius: 1rem;
+    border-radius: .8rem;
     color: #FAFAFA;
     box-shadow: 0px 0px 30px rgb(71, 71, 71);
 }
@@ -959,18 +959,23 @@ button.boton:hover {
 }
 
 #formularioCursos #datos-contacto input, select {
+    width: 65%;
+    height: 70%;
     margin-top: .3rem;
     padding: .35rem;
+    border-radius: .8rem;
+    /*border-style: dashed;
+    border-color: green;*/
+}
+/*
+
+#formularioCursos #datos-contacto input:focus, select:focus {
     width: 80%;
-    height: 70%;
-    border-radius: 1rem;
-    border-style: dashed;
-    border-color: green;
 }
 
 #formularioCursos #fecha_nacimiento {
-    /*padding: .2rem;*/
-}
+    /*padding: .2rem;
+}*/
 
 #datos-contacto article {
     display: flex;
@@ -979,19 +984,36 @@ button.boton:hover {
     justify-content: center;
 }
 
-#datos-contacto div {
+#datos-contacto input:focus {
+    outline: none;
+    box-shadow: 0px 0px 30px rgb(49, 49, 49);
+    /*border-bottom: 3px solid rgba(255,255,255,0.4);*/
+}
+
+#datos-contacto input:focus:invalid {
+    border-bottom: 3px solid rgb(218, 78, 78);
+}
+
+#datos-contacto input:focus:valid {
+    border-bottom: 3px solid rgb(78, 218, 113);
+}
+
+#datos-contacto .div-contenedor {
     margin: .5rem;
     text-align: center;
     width: 25%;
-    border-radius: 1rem;
-    border-style: dashed;
+    border-radius: .8rem;
+    /*border-style: dashed;
     border-color: red;
-    padding-bottom: 1rem;
+    padding-bottom: 1rem;*/
     
 }
 
 #datos-contacto label {
     /*text-align: center;*/
+    /*border-radius: 1rem;
+    border-style: dashed;
+    border-color: green;*/
 
 }
 #datos-contacto select {
@@ -1000,18 +1022,25 @@ button.boton:hover {
 }
 
 #formacion-previa article,
-#cursos-interesado article {
+#cursos-interesado article,
+#modalidad article {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 #formacion-previa div,
-#cursos-interesado div {
+#cursos-interesado div,
+#modalidad div {
     margin: .5rem .8rem;
 }
 
+#proteccion-datos a {
+    text-decoration: none;
+    color: #E77218;
+}
 
 
 /*

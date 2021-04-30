@@ -37,49 +37,49 @@
         <form action="" method="" id="formularioCursos">
             <section id="datos-contacto">
                 <h3>Datos Personales</h3>
-                <article >
-                    <div>
-                        <label for="nombre">Nombre</label><br>
-                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                <article>
+                    <div class="div-contenedor">
+                        <div><label for="nombre">Nombre</label></div>
+                        <div><input type="text" id="nombre" name="nombre" required pattern=></div>
                     </div>
-                    <div>
-                        <label for="apellidos">Apellidos</label><br>
-                        <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos" required>
+                    <div class="div-contenedor">
+                        <div><label for="apellidos">Apellidos</label></div>
+                        <div><input type="text" id="apellidos" name="apellidos" required></div>
                     </div>
-                    <div>
-                        <label for="dni">DNI</label><br> 
-                        <input type="text" id="dni" name="dni" placeholder="Escribe tu DNI" required>
+                    <div class="div-contenedor">
+                        <div><label for="dni">DNI</label></div>
+                        <div><input type="text" id="dni" name="dni" required></div>
                     </div>
-                    <div>
-                        <label for="fecha_nacimiento">Fecha de nacimiento</label><br>
-                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="Fecha de nacimiento" required>
+                    <div class="div-contenedor">
+                        <div><label for="fecha_nacimiento">Fecha de nacimiento</label></div>
+                        <div><input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required></div>
                     </div>
-                    <div>
-					    <label for="domicilio">Domicilio</label><br>
-                        <input type="text" id="domicilio" name="domicilio" placeholder="Introduce tu domicilio" required>
-					</div>
-                    <div>
-					    <label for="codigo_postal">Código Postal</label><br>
-                        <input type="text" id="codigo_postal" name="codigo_postal" placeholder="Código Postal" required>
-					</div>
-                    <div>
-					<label for="localidad">Localidad</label><br>
-                    <select id="milocalidad" name="milocalidad">
-                        <option value="jerez">Jerez</option>
-                        <option value="madrid">Madrid</option>
-                        <option value="alacant">Alacant</option>
-                        <option value="zaragoza">Zaragoza</option>
-                        <option value="soria">Soria</option>
-                        <option value="otros">Otros</option>
-                    </select>
-					</div>
-                    <div>
-                        <label for="telefono">Teléfono</label><br>
-                        <input type="tel" id="telefono" name="telefono" placeholder="Indica tu teléfono" required>
+                    <div class="div-contenedor">
+                        <div><label for="domicilio">Domicilio</label></div>
+                        <div><input type="text" id="domicilio" name="domicilio" required></div>
                     </div>
-                    <div>
-					    <label for="mail">E-mail</label><br>
-                        <input type="email" id="mail" name="e-mail" placeholder="Indica tu e-mail" required>
+                    <div class="div-contenedor">
+                        <div><label for="codigo_postal">Código Postal</label></div>
+                        <div><input type="text" id="codigo_postal" name="codigo_postal" required></div>
+                    </div>
+                    <div class="div-contenedor">
+                        <div><label for="localidad">Localidad</label></div>
+                        <div><select id="milocalidad" name="milocalidad">
+                            <option value="jerez">Jerez</option>
+                            <option value="madrid">Madrid</option>
+                            <option value="alacant">Alacant</option>
+                            <option value="zaragoza">Zaragoza</option>
+                            <option value="soria">Soria</option>
+                            <option value="odivos">Odivos</option>
+                        </select></div>
+                    </div>
+                    <div class="div-contenedor">
+                        <div><label for="telefono">Teléfono</label></div>
+                        <div><input type="tel" id="telefono" name="telefono" placeholder="666999888" required></div>
+                    </div>
+                    <div class="div-contenedor">
+                        <div><label for="mail">E-mail</label></div>
+                        <div><input type="email" id="mail" name="e-mail" placeholder="ejemplo@ejemplo.com" required></div>
                     </div>
                 </article>
             </section>
@@ -149,10 +149,16 @@
 
             <section id="modalidad">
                 <h3>Modalidad</h3>
-                    <input type="radio" id="online" name="modalidad" value="online">
-                    <label for="online">Online</label>
-                    <input type="radio" id="presencial" name="modalidad" value="presencial">
-                    <label for="presencial">Presencial</label>
+                    <article>
+                        <div>
+                            <input type="radio" id="online" name="modalidad" value="online">
+                            <label for="online">Online</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="presencial" name="modalidad" value="presencial">
+                            <label for="presencial">Presencial</label>
+                        </div>
+                    </article>
             </section>
 
             <section id="proteccion-datos">

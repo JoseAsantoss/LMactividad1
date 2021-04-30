@@ -8,11 +8,11 @@ let errors = {
     telefono: true,
 };
 
-const nomformatRegex = /[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,25}[ ]{1}[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,25}[ ]{1}[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,25}/ig;
+const nomformatRegex = /^[A-Z]{1}[A-Za-z_]{8,30}$/;
 
-const mailformatRegex = /^[^@]+@\w+(\.\w+)+\w$/;
+const mailformatRegex = /^[a-z0-9-_.+]{3,25}@[a-z0-9_]{2,12}.[a-z]{2,6}$/;
 
-const telformatRegex = /^[0-9]{9}$/;
+const telformatRegex = /^[0-9/^[6|7|8|9]{1}[0-9]{8,8}$/;
 
 const caja = document.querySelectorAll('input.sp-form');
 
