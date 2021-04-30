@@ -938,8 +938,8 @@ button.boton:hover {
     flex-direction: column;
     justify-content: space-between;
     background-color: rgb(26, 52, 81);
-    margin: 0 5rem;
-    border-radius: .8rem;
+    margin: 5rem;
+    border-radius: 1rem;
     color: #FAFAFA;
     box-shadow: 0px 0px 30px rgb(71, 71, 71);
 }
@@ -1042,6 +1042,26 @@ button.boton:hover {
     color: #E77218;
 }
 
+#submit-reset {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#submit-reset input {
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+#submit-reset input:hover {
+    cursor: pointer;
+    background-color: #E77218;
+    color: #FAFAFA;
+}
 
 /*
 #formularioCursos #datos-contacto input {
