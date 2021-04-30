@@ -5,118 +5,179 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de información de cursos</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="../images/svg/icono.svg" sizes="any">
+    <script defer src="../js/copy.js"></script>
 </head>
 <body class="container">
     <header>
         <a href="index.html">
-            <img class="logo-header" src="images/logo-svg.svg" alt="logo TERRITORIO WEB">
+            <img class="logo-header" src="../images/logo-svg.svg" alt="logo TERRITORIO WEB">
         </a>
     </header>
     <nav class="navbar">
         <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="content/servicios.html">Servicios</a></li>
-            <li><a href="content/cursos.html">Cursos</a></li>
-            <li><a href="content/about.html">Quiénes somos</a></li>
-            <li><a href="content/contact.html">Contacto</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="about.html">Quiénes somos</a></li>
+            <li><a href="contact.html">Contacto</a></li>
         </ul>
     </nav>  
 
-    <main>
-        <form action="" method="" id="formulario">
-        <section class="datos-contacto">
-            <h3>Datos Personales</h3>
-                <label for="apellidos">Apellidos:</label>
-                <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos" required>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
-                <label for="dni">DNI:</label>
-                <input type="text" id="dni" name="dni" placeholder="Escribe tu DNI" required>
-                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
-                <input type="text" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="Fecha de nacimiento" required>
-                <label for="domicilio">Domicilio:</label>
-                <input type="text" id="domicilio" name="domicilio" placeholder="Introduce tu domicilio" required>
-                <label for="codigo_postal">Código Postal:</label>
-                <input type="text" id="codigo_postal" name="codigo_postal" placeholder="Código Postal" required>
-                <label for="localidad">Localidad:</label>
-                <select id="milocalidad" name="milocalidad">
-                    <option value="jerez">Jerez</option>
-                    <option value="madrid">Madrid</option>
-                    <option value="alacant">Alacant</option>
-                    <option value="zaragoza">Zaragoza</option>
-                    <option value="soria">Soria</option>
-                    <option value="otros">Otros</option>
-                </select>
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="Indica tu teléfono" required>
-                <label for="mail">E-mail:</label>
-                <input type="email" id="mail" name="e-mail" placeholder="Indica tu e-mail" required>
+    <main id="mainCursos">
+        <section class="texto-presentacion" id="cabecera-formulario">
+            <h1>FORMULARIO</h1>
+            <h2>Blabla</h2>
         </section>
+        <form action="" method="" id="formularioCursos">
+            <section id="datos-contacto">
+                <h3>Datos Personales</h3>
+                <article >
+                    <div>
+                        <label for="nombre">Nombre</label><br>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                    </div>
+                    <div>
+                        <label for="apellidos">Apellidos</label><br>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos" required>
+                    </div>
+                    <div>
+                        <label for="dni">DNI</label><br> 
+                        <input type="text" id="dni" name="dni" placeholder="Escribe tu DNI" required>
+                    </div>
+                    <div>
+                        <label for="fecha_nacimiento">Fecha de nacimiento</label><br>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="Fecha de nacimiento" required>
+                    </div>
+                    <div>
+					    <label for="domicilio">Domicilio</label><br>
+                        <input type="text" id="domicilio" name="domicilio" placeholder="Introduce tu domicilio" required>
+					</div>
+                    <div>
+					    <label for="codigo_postal">Código Postal</label><br>
+                        <input type="text" id="codigo_postal" name="codigo_postal" placeholder="Código Postal" required>
+					</div>
+                    <div>
+					<label for="localidad">Localidad</label><br>
+                    <select id="milocalidad" name="milocalidad">
+                        <option value="jerez">Jerez</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="alacant">Alacant</option>
+                        <option value="zaragoza">Zaragoza</option>
+                        <option value="soria">Soria</option>
+                        <option value="otros">Otros</option>
+                    </select>
+					</div>
+                    <div>
+                        <label for="telefono">Teléfono</label><br>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Indica tu teléfono" required>
+                    </div>
+                    <div>
+					    <label for="mail">E-mail</label><br>
+                        <input type="email" id="mail" name="e-mail" placeholder="Indica tu e-mail" required>
+                    </div>
+                </article>
+            </section>
 
-        <section class="formacion-previa">
-            <h3>Formación previa</h3>
-                <input type="radio" id="bat-logse" name="formacion-previa" value="bat-logse">
-                <label for="bat-logse">Bachillerato LOGSE</label>
-                <input type="radio" id="bat-exper" name="formacion-previa" value="bat-exper">
-                <label for="bat-exper">Bachillerato experimental</label>
-                <input type="radio" id="cou" name="formacion-previa" value="cou">
-                <label for="cou">COU</label>
-                <input type="radio" id="fp" name="formacion-previa" value="fp">
-                <label for="fp">Formación Profesional</label>
-                <input type="radio" id="otros" name="formacion-previa" value="otros" onclick="">
-                <label for="otros">Otros</label>
-                <input type="text" id="personal" name="otraformacion" placeholder="Indica tu formación" hidden>
-        </section>
+            <section id="formacion-previa">
+                <h3>Formación previa</h3>
+                    <article>
+                        <div>
+                            <input type="radio" id="bat-logse" name="formacion-previa" value="bat-logse">
+                            <label for="bat-logse">Bachillerato LOGSE</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="bat-exper" name="formacion-previa" value="bat-exper">
+                            <label for="bat-exper">Bachillerato experimental</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="cou" name="formacion-previa" value="cou">
+                            <label for="cou">COU</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="fp" name="formacion-previa" value="fp">
+                            <label for="fp">Formación Profesional</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="otros" name="formacion-previa" value="otros" onclick="">
+                            <label for="otros">Otros</label>
+                        </div>
+                        <div>
+                            <input type="text" id="personal" name="otraformacion" placeholder="Indica tu formación" hidden>
+                        </div>
+                    </article>
+            </section>
 
-        <section class="cursos-interesado">
-            <h3>Cursos en los que estás interesado</h3>
-                <input type="checkbox" id="java" name="java" value="java">
-                <label for="java">Java</label>
-                <input type="checkbox" id="java-ee" name="java-ee" value="java-ee">
-                <label for="java-ee">Java EE</label>
-                <input type="checkbox" id="php" name="php" value="php">
-                <label for="php">PHP</label>
-                <input type="checkbox" id="html5" name="html5" value="html5">
-                <label for="html5">HTML5</label>
-                <input type="checkbox" id="javascript" name="javascript" value="javascript">
-                <label for="javascript">JavaScript</label>
-                <input type="checkbox" id="css3" name="css3" value="css3">
-                <label for="css3">CSS3</label>
-                <input type="checkbox" id="mkt-digital" name="mkt-digital" value="mkt-digital">
-                <label for="mkt-digital">Marketing Digital</label>
-        </section>
+            <section id="cursos-interesado">
+                <h3>Cursos en los que estás interesado</h3>
+                    <article>
+                        <div>
+                            <input type="checkbox" id="java" name="java" value="java">
+                            <label for="java">Java</label> 
+                        </div>
+                        <div>
+                            <input type="checkbox" id="java-ee" name="java-ee" value="java-ee">
+                            <label for="java-ee">Java EE</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="php" name="php" value="php">
+                            <label for="php">PHP</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="html5" name="html5" value="html5">
+                            <label for="html5">HTML5</label> 
+                        </div>
+                        <div>
+                            <input type="checkbox" id="javascript" name="javascript" value="javascript">
+                            <label for="javascript">JavaScript</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="css3" name="css3" value="css3">
+                            <label for="css3">CSS3</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="mkt-digital" name="mkt-digital" value="mkt-digital">
+                            <label for="mkt-digital">Marketing Digital</label>
+                        </div>
+                    </article>
+            </section>
 
-        <section class="modalidad">
-            <h3>Modalidad</h3>
-                <input type="radio" id="online" name="modalidad" value="online">
-                <label for="online">Online</label>
-                <input type="radio" id="presencial" name="modalidad" value="presencial">
-                <label for="presencial">Presencial</label>
-        </section>
+            <section id="modalidad">
+                <h3>Modalidad</h3>
+                    <input type="radio" id="online" name="modalidad" value="online">
+                    <label for="online">Online</label>
+                    <input type="radio" id="presencial" name="modalidad" value="presencial">
+                    <label for="presencial">Presencial</label>
+            </section>
 
-        <section class="proteccion-datos">
-            <h3>Ley de protección de datos</h3>
-            <p>El responsable del tratamiento es TerritorioWeb. La finalidad de la recogida de sus datos es para poder atender sus solicitudes de información, sin ceder sus datos a terceros. Tiene derecho a saber qué información tenemos sobre usted, corregirla o eliminarla tal y como se explica en la <a href="#" title="Politica de Privacidad">política de Privacidad</a>.</p>
-            <ul class="lista-pd">
-                <li>blablabla1</li>
-                <li>blablabla2</li>
-            </ul>
-        </section>
+            <section id="proteccion-datos">
+                <h3>Ley de protección de datos</h3>
+                <p>El responsable del tratamiento es TerritorioWeb, S.L. La finalidad de la recogida de sus datos es para poder atender sus solicitudes de información, sin ceder sus datos a terceros. Tiene derecho a saber qué información tenemos sobre usted, corregirla o eliminarla tal y como se explica en la <a href="#" title="Politica de Privacidad">política de Privacidad</a>.</p>
+                <ul class="lista-pd">
+                    <li>blablabla1</li>
+                    <li>blablabla2</li>
+                </ul>
+            </section>
 
-        <section>
-            <input type="button" value="Enviar" disabled>
-            <input type="reset" value="Limpiar formulario">
-        </section>    
+            <section>
+                <input type="submit" value="Enviar" disabled>
+                <input type="reset" value="Limpiar formulario">
+            </section>    
         </form>
     </main>
 
     <footer>
         <section class="footer-section-1">
-            <a href="#"><img src="images/svg/facebook-f-brands.svg" alt="icono facebook" class="icono-redes"></a>
-            <a href="#"><img src="images/svg/twitter-brands.svg" alt="icono twitter" class="icono-redes"></a>
-            <a href="#"><img src="images/svg/pinterest-brands.svg" alt="icono pinterest" class="icono-redes"></a>
-            <a href="#"><img src="images/svg/instagram-brands.svg" alt="icono instagram" class="icono-redes"></a>
-            <a href="#"><img src="images/svg/youtube-brands.svg" alt="icono youtube" class="icono-redes"></a>
+            <a href="#"><img src="../images/svg/facebook-f-brands.svg" alt="icono facebook" class="icono-redes"></a>
+            <a href="#"><img src="../images/svg/twitter-brands.svg" alt="icono twitter" class="icono-redes"></a>
+            <a href="#"><img src="../images/svg/pinterest-brands.svg" alt="icono pinterest" class="icono-redes"></a>
+            <a href="#"><img src="../images/svg/instagram-brands.svg" alt="icono instagram" class="icono-redes"></a>
+            <a href="#"><img src="../images/svg/youtube-brands.svg" alt="icono youtube" class="icono-redes"></a>
         </section>
        
         <section class="footer-section-2">
@@ -128,22 +189,6 @@
         </section>
 
         <section class="footer-section-3">
-            <p id="copy" onload="muestraFecha()"></p>
+            <p id="copy"></p>
         </section>
     </footer>
-</body>
-</html>
-</body>
-</html>
-</body>
-</html>
-</body>
-</html>
-</body>
-</html>
-</body>
-</html>
-</body>
-</html>
-</body>
-</html>

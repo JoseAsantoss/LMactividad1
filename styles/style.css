@@ -930,6 +930,95 @@ button.boton:hover {
 
 
 /**************************** 
-  Estilos Formulario
+      Estilos Formulario
 ****************************/
 
+#formularioCursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(26, 52, 81);
+    margin: 0 5rem;
+    border-radius: 1rem;
+    color: #FAFAFA;
+    box-shadow: 0px 0px 30px rgb(71, 71, 71);
+}
+
+#formularioCursos h3 {
+    color: #E77218;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#formularioCursos section {
+    margin: 2rem 1rem;
+}
+
+#formularioCursos label {
+
+}
+
+#formularioCursos #datos-contacto input, select {
+    margin-top: .3rem;
+    padding: .35rem;
+    width: 80%;
+    height: 70%;
+    border-radius: 1rem;
+    border-style: dashed;
+    border-color: green;
+}
+
+#formularioCursos #fecha_nacimiento {
+    /*padding: .2rem;*/
+}
+
+#datos-contacto article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#datos-contacto div {
+    margin: .5rem;
+    text-align: center;
+    width: 25%;
+    border-radius: 1rem;
+    border-style: dashed;
+    border-color: red;
+    padding-bottom: 1rem;
+    
+}
+
+#datos-contacto label {
+    /*text-align: center;*/
+
+}
+#datos-contacto select {
+    padding: .35rem;
+    cursor: pointer;
+}
+
+#formacion-previa article,
+#cursos-interesado article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#formacion-previa div,
+#cursos-interesado div {
+    margin: .5rem .8rem;
+}
+
+
+
+/*
+#formularioCursos #datos-contacto input {
+    width: 70%;
+}
+
+#formularioCursos #datos-contacto input:focus{
+    width: 100%;
+}*/

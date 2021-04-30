@@ -1,11 +1,19 @@
-muestraFecha = () => {
-    let fecha = new Date();
-    let año = fecha.getFullYear();
+fecha = () => {
+    const elem = document.getElementById('copy');
+    let content = elem.innerHTML;
 
-const fechaPie = document.getElementById('copy').innerHTML('&copy; Copyright 2021 - ' + año + '. Todos los derechos reservados.');
+    let anio = new Date().getFullYear();
 
-    return fechaPie;
-};
+    console.log(anio);
+
+    elem.innerHTML = (content + '&copy 2021 - ' +  + '. Todos los derechos reservados');
+
+    console.log(elem.innerHTML = content + ('&copy 2021 - ' + anio + '. Todos los derechos reservados'));
+
+    addEventListener('load', fecha);
+}
+
+
 
 
 
