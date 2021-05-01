@@ -1,14 +1,9 @@
 $("[type = cursoForm]").click(function () {
-    console.log("A")
     let classDiv = $(this).attr("class");
     let div = $(this)
-    console.log(div)
     let checkBox = div.children("input")
-    console.log(checkBox)
     let imgLabel = div.children("div").children(".imgCurso")
-    console.log(imgLabel)
     let imgCheck = div.children("div").children(".imgChecked")
-    console.log(imgCheck)
     if(classDiv == "noSeleccionado"){
         $(this).attr("class", "seleccionado")
         console.log("Vamos a seleccionado")
@@ -23,3 +18,21 @@ $("[type = cursoForm]").click(function () {
         imgCheck.css({ visibility: "hidden" })
     }
 })
+
+$("input[type=radio][name=formacion-previa]").change(function() {
+    console.log(this.value)
+    console.log("Ha entrado")
+    let divFormacion = $("#otraFormacion")
+    let cajaFormacion = divFormacion.children("#personal")
+    let otros = $("#formacOtros")
+    if(this.value=="otros") {
+        if(cajaFormacion.length == 0){
+            console.log("Vamos a poner la caja")
+            let caja = $('<input type="text" id="personal" name="detalleFormacion" placeholder="Indica tu formación">')
+            caja.appendTo(divFormacion)
+        }
+    }else{
+        console.log("Vamos a quitar la caja")
+        $("#personal").remove()
+    }
+});
