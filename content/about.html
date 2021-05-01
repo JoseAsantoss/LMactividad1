@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="../images/svg/icono.svg" sizes="any">
+    <script defer src="../js/carrusel.js"></script>
 </head>
 <!-- La etiqueta body tendrá la clase "container" para la distribución del grid principal -->
 <body class="container">
@@ -34,32 +35,52 @@
         <section class="quienes-somos">
             <h1>QUIÉNES SOMOS</h1>
             <h2>Conoce a nuestro equipo</h2>
-            <article>
-                <h3>TERRITORIO WEB</h3>
-                <p> Nuestra empresa nace en el año 2020, de la mano de un equipo de cinco programadores y desarrolladores web 
-                    con una meta común: aunar nuestra pasión por el desarrollo y ofrecer los mejores servicios y cursos a 
-                    nuestros clientes.
-                </p>
+            <!-- Contenedor carrusel -->
+            <article class="carrusel">
+                <!-- Slides carrusel -->
+                <div class="slides">
+                    <img src="../images/carrusel1.jpg" alt="imagen carrusel">
+                    <p class="texto-carrusel">
+                        Territorio Web nace en 2021 de la mano de cinco programadores.<br> 
+                        Sedes en Madrid, Alicante, Zaragoza y Jerez.
+                    </p>
+                </div>
+                <div class="slides">
+                    <img src="../images/carrusel2.jpg" alt="imagen carrusel">
+                    <p class="texto-carrusel">
+                        Queremos compartir nuestra pasión por la programación y el desarrollo web.
+                    </p>
+                </div>
+                <div class="slides">
+                    <img src="../images/carrusel3.png" alt="imagen carrusel">
+                    <p class="texto-carrusel">Enseñamos a programar con cursos presenciales y online.</p>
+                </div>
+                <div class="slides">
+                    <img src="../images/carrusel5.jpg" alt="imagen carrusel">
+                    <p class="texto-carrusel">Contamos con los cursos y servicios más actualizados y pioneros.</p>
+                </div>
+                <div class="slides">
+                    <img src="../images/carrusel6.jpg" alt="imagen carrusel">
+                    <p class="texto-carrusel">Próximamente, participa en nuestros bootcamps y hackathons.</p>
+                </div>
+
+
+                <!-- Botones carrusel
+                <a onclick="restaSlides(1)" class="atras">&#10094;</a>
+                <a onclick="sumaSlides(1)" class="siguiente">&#10095;</a>
+                -->
+                <!-- Círculos carrusel -->
+                <div class="contenedor-puntos">
+                    <span onclick="slideActual(1)" class="punto-carrusel"></span>
+                    <span onclick="slideActual(2)" class="punto-carrusel"></span>
+                    <span onclick="slideActual(3)" class="punto-carrusel"></span>
+                    <span onclick="slideActual(4)" class="punto-carrusel"></span>
+                    <span onclick="slideActual(5)" class="punto-carrusel"></span>
+                </div>
             </article>
+
         </section>
         
-        <section class="separador">
-            <h2>Comprometidos con nuestros clientes</h2>
-        </section>
-        <!-- Sección con los valores de la empresa -->
-        <section class="quienes-somos-2">
-            <article>
-                <h3>NUESTROS VALORES</h3>
-                <p> En Territorio Web creemos en el trabajo en equipo y en el compromiso con nuestros proyectos y clientes. 
-                    Trabajamos en un ambiente colaborativo y de respeto, donde nuestro principal objetivo es que nuestros 
-                    clientes estén satisfechos.
-                </p>
-            </article>
-        </section>
-
-        <section class="separador">
-            <h2>A la vanguardia de la tecnología</h2>
-        </section>
         <!-- Sección con tarjetas que voltean, con información de los cinco integrantes de Territorio Web -->
         <section class="seccion-tarjetas">
             <!-- Tarjeta 1 -->
