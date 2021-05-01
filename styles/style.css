@@ -1097,8 +1097,6 @@ button.boton:hover {
     border-radius: 1rem;
     animation-name: animacionCursos;
     animation-duration: 3s;
-    z-index:1;
-    
     
   }
 #cursos-section .imgChecked{

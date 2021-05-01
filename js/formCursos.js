@@ -5,9 +5,9 @@ $("[name = cursoForm]").click(function () {
     console.log(div)
     let checkBox = div.children("input")
     console.log(checkBox)
-    let imgLabel = div.children("label").children("img")
+    let imgLabel = div.children("label").children(".imgCurso")
     console.log(imgLabel)
-    let imgCheck = div.children("img")
+    let imgCheck = div.children("label").children(".imgChecked")
     console.log(imgCheck)
     if(classDiv == "noSeleccionado"){
         $(this).attr("class", "seleccionado")
