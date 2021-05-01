@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +16,7 @@
     <script defer src="../js/formCursos.js"></script>
     <script type="text/javascript" src="../libs/jquery-3.5.1.min.js"></script>
 </head>
+
 <body class="container">
     <header>
         <a href="index.html">
@@ -29,7 +31,7 @@
             <li><a href="about.html">Quiénes somos</a></li>
             <li><a href="contact.html">Contacto</a></li>
         </ul>
-    </nav>  
+    </nav>
 
     <main id="mainCursos">
         <section class="texto-presentacion" id="cabecera-formulario">
@@ -42,7 +44,7 @@
                 <article>
                     <div class="div-contenedor">
                         <div><label for="nombre">Nombre</label></div>
-                        <div><input type="text" id="nombre" name="nombre" required ></div>
+                        <div><input type="text" id="nombre" name="nombre" required></div>
                     </div>
                     <div class="div-contenedor">
                         <div><label for="apellidos">Apellidos</label></div>
@@ -67,13 +69,13 @@
                     <div class="div-contenedor">
                         <div><label for="localidad">Localidad</label></div>
                         <div><select id="milocalidad" name="milocalidad">
-                            <option value="jerez">Jerez</option>
-                            <option value="madrid">Madrid</option>
-                            <option value="alacant">Alacant</option>
-                            <option value="zaragoza">Zaragoza</option>
-                            <option value="soria">Soria</option>
-                            <option value="odivos">Odivos</option>
-                        </select></div>
+                                <option value="jerez">Jerez</option>
+                                <option value="madrid">Madrid</option>
+                                <option value="alacant">Alacant</option>
+                                <option value="zaragoza">Zaragoza</option>
+                                <option value="soria">Soria</option>
+                                <option value="odivos">Odivos</option>
+                            </select></div>
                     </div>
                     <div class="div-contenedor">
                         <div><label for="telefono">Teléfono</label></div>
@@ -81,119 +83,122 @@
                     </div>
                     <div class="div-contenedor">
                         <div><label for="mail">E-mail</label></div>
-                        <div><input type="email" id="mail" name="e-mail" placeholder="ejemplo@ejemplo.com" required></div>
+                        <div><input type="email" id="mail" name="e-mail" placeholder="ejemplo@ejemplo.com" required>
+                        </div>
                     </div>
                 </article>
             </section>
 
             <section id="formacion-previa">
                 <h3>Formación previa</h3>
-                    <article>
-                        <div>
-                            <input type="radio" id="bat-logse" name="formacion-previa" value="bat-logse">
-                            <label for="bat-logse">Bachillerato LOGSE</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="bat-exper" name="formacion-previa" value="bat-exper">
-                            <label for="bat-exper">Bachillerato experimental</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="cou" name="formacion-previa" value="cou">
-                            <label for="cou">COU</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="fp" name="formacion-previa" value="fp">
-                            <label for="fp">Formación Profesional</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="otros" name="formacion-previa" value="otros" onclick="">
-                            <label for="otros">Otros</label>
-                        </div>
-                        <div>
-                            <input type="text" id="personal" name="otraformacion" placeholder="Indica tu formación" hidden>
-                        </div>
-                    </article>
+                <article>
+                    <div>
+                        <input type="radio" id="bat-logse" name="formacion-previa" value="bat-logse">
+                        <label for="bat-logse">Bachillerato LOGSE</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="bat-exper" name="formacion-previa" value="bat-exper">
+                        <label for="bat-exper">Bachillerato experimental</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="cou" name="formacion-previa" value="cou">
+                        <label for="cou">COU</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="fp" name="formacion-previa" value="fp">
+                        <label for="fp">Formación Profesional</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="otros" name="formacion-previa" value="otros" onclick="">
+                        <label for="otros">Otros</label>
+                    </div>
+                    <div>
+                        <input type="text" id="personal" name="otraformacion" placeholder="Indica tu formación" hidden>
+                    </div>
+                </article>
             </section>
 
             <section id="cursos-section">
                 <h3>Cursos en los que estás interesado</h3>
-                    <article>
-                        <div name="cursoForm" class="noSeleccionado">
-                            <input type="checkbox" id="javaSelect" name="cursos" value="java">
-                            <label for="java" class="labelCurso">
+                <article>
+                    <div name="cursoForm" class="noSeleccionado">
+                        <input type="checkbox" id="javaSelect" name="cursos" value="java">
+                        <label for="java" class="labelCurso">
                             <H5>Java</H5>
-                                <img src="../images/cursos/java.png">
-                            </label> 
-                            <img id="checked" src="../images/check.png">                            
-                        </div>
-                        <div name="cursoForm" class="noSeleccionado">
-                            <input type="checkbox" id="java-eeSelect" name="cursos" value="java-ee">
-                            <label for="java-ee" class="labelCurso">
+                            <img class="imgCurso" src="../images/cursos/java.png" alt="Imagen Java">
+                        </label>
+                        <img class="imgChecked" src="../images/check.png">
+                    </div>
+                    <div name="cursoForm" class="noSeleccionado">
+                        <input type="checkbox" id="java-eeSelect" name="cursos" value="java-ee">
+                        <label for="java-ee" class="labelCurso">
                             <H5>Java EE</H5>
-                                <img src="../images/cursos/java-ee.jpg">
-                            </label> 
-                            <img id="checked" src="../images/check.png">                            
-                        </div>
-                        <div name="cursoForm" class="noSeleccionado">
-                            <input type="checkbox" id="phpSelect" name="cursos" value="php">
-                            <label for="php" class="labelCurso">
+                            <img class="imgCurso" src="../images/cursos/java-ee.jpg" alt="Imagen Java EE">
+                        </label>
+                        <img class="imgChecked" src="../images/check.png">
+                    </div>
+                    <div name="cursoForm" class="noSeleccionado">
+                        <label for="php" class="labelCurso">
                             <H5>PHP</H5>
-                                <img src="../images/cursos/php.png">
-                            </label> 
-                            <img id="checked" src="../images/check.png">                            
-                        </div>
-                        <div name="cursoForm" class="noSeleccionado">
-                            <input type="checkbox" id="html5Select" name="cursos" value="html5">
-                            <label for="html5" class="labelCurso">
+                            <img class="imgCurso" src="../images/cursos/php.png" alt="Imagen PHP">
+                        </label>
+                        <img class="imgChecked" src="../images/check.png">
+                    </div>
+                    <div name="cursoForm" class="noSeleccionado">
+                        <input type="checkbox" id="html5Select" name="cursos" value="html5">
+                        <label for="html5" class="labelCurso">
                             <H5>HTML5</H5>
-                                <img src="../images/cursos/html.png">
-                            </label> 
-                            <img id="checked" src="../images/check.png">                            
-                        </div>
-                        <div name="cursoForm" class="noSeleccionado">
-                            <input type="checkbox" id="javascriptSelect" name="cursos" value="javascript">
-                            <label for="javascript" class="labelCurso">
+                            <img class="imgCurso" src="../images/cursos/html.png" alt="Imagen HTML">
+                        </label>
+                        <img class="imgChecked" src="../images/check.png">
+                    </div>
+                    <div name="cursoForm" class="noSeleccionado">
+                        <input type="checkbox" id="javascriptSelect" name="cursos" value="javascript">
+                        <label for="javascript" class="labelCurso">
                             <H5>JavaScript</H5>
-                                <img src="../images/cursos/javascript.png">
-                            </label> 
-                            <img id="checked" src="../images/check.png">                            
-                        </div>
-                        <div name="cursoForm" class="noSeleccionado">
-                            <input type="checkbox" id="css3Select" name="cursos" value="css3">
-                            <label for="css3" class="labelCurso">
+                            <img class="imgCurso" src="../images/cursos/javascript.png" alt="Imagen JavaScript">
+                        </label>
+                        <img class="imgChecked" src="../images/check.png">
+                    </div>
+                    <div name="cursoForm" class="noSeleccionado">
+                        <input type="checkbox" id="css3Select" name="cursos" value="css3">
+                        <label for="css3" class="labelCurso">
                             <H5>CSS3</H5>
-                                <img src="../images/cursos/css.jpg">
-                            </label> 
-                            <img id="checked" src="../images/check.png">                            
-                        </div>
-                        <div name="cursoForm" class="noSeleccionado">
-                            <input type="checkbox" id="mk-digitalSelect" name="cursos" value="mk-digital">
-                            <label for="mk-digital" class="labelCurso">
+                            <img class="imgCurso" src="../images/cursos/css.jpg" alt="Imagen CSS">
+                        </label>
+                        <img class="imgChecked" src="../images/check.png">
+                    </div>
+                    <div name="cursoForm" class="noSeleccionado">
+                        <input type="checkbox" id="mk-digitalSelect" name="cursos" value="mk-digital">
+                        <label for="mk-digital" class="labelCurso">
                             <H5>Marketing Digital</H5>
-                                <img src="../images/cursos/mk-digital.jpg">
-                            </label> 
-                            <img id="checked" src="../images/check.png">                            
-                        </div>
-                    </article>
+                            <img class="imgCurso" src="../images/cursos/mk-digital.jpg" alt="Imagen Marketing Digital">
+                        </label>
+                        <img class="imgChecked" src="../images/check.png">
+                    </div>
+                </article>
             </section>
 
             <section id="modalidad">
                 <h3>Modalidad</h3>
-                    <article>
-                        <div>
-                            <input type="radio" id="online" name="modalidad" value="online">
-                            <label for="online">Online</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="presencial" name="modalidad" value="presencial">
-                            <label for="presencial">Presencial</label>
-                        </div>
-                    </article>
+                <article>
+                    <div>
+                        <input type="radio" id="online" name="modalidad" value="online">
+                        <label for="online">Online</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="presencial" name="modalidad" value="presencial">
+                        <label for="presencial">Presencial</label>
+                    </div>
+                </article>
             </section>
 
             <section id="proteccion-datos">
                 <h3>Ley de protección de datos</h3>
-                <p>El responsable del tratamiento es TerritorioWeb, S.L. La finalidad de la recogida de sus datos es para poder atender sus solicitudes de información, sin ceder sus datos a terceros. Tiene derecho a saber qué información tenemos sobre usted, corregirla o eliminarla tal y como se explica en la <a href="#" title="Politica de Privacidad">política de Privacidad</a>.</p>
+                <p>El responsable del tratamiento es TerritorioWeb, S.L. La finalidad de la recogida de sus datos es
+                    para poder atender sus solicitudes de información, sin ceder sus datos a terceros. Tiene derecho a
+                    saber qué información tenemos sobre usted, corregirla o eliminarla tal y como se explica en la <a
+                        href="#" title="Politica de Privacidad">política de Privacidad</a>.</p>
                 <ul class="lista-pd">
                     <li>blablabla1</li>
                     <li>blablabla2</li>
@@ -203,7 +208,7 @@
             <section id="submit-reset">
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpiar formulario">
-            </section>    
+            </section>
         </form>
     </main>
 
@@ -215,7 +220,7 @@
             <a href="#"><img src="../images/svg/instagram-brands.svg" alt="icono instagram" class="icono-redes"></a>
             <a href="#"><img src="../images/svg/youtube-brands.svg" alt="icono youtube" class="icono-redes"></a>
         </section>
-       
+
         <section class="footer-section-2">
             <ul>
                 <li><a href="#">Términos y condiciones</a></li>
