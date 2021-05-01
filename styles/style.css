@@ -964,15 +964,15 @@ button.boton:hover {
     margin-top: .3rem;
     padding: .35rem;
     border-radius: .8rem;
-    /*border-style: dashed;
-    border-color: green;*/
+    border-style: dashed;
+    border-color: green;
 }
-/*
+
 
 #formularioCursos #datos-contacto input:focus, select:focus {
     width: 80%;
 }
-
+/*
 #formularioCursos #fecha_nacimiento {
     /*padding: .2rem;
 }*/
@@ -1063,6 +1063,19 @@ button.boton:hover {
     color: #FAFAFA;
 }
 
+#formacion-previa input{
+    margin: 5px;
+	display: flex ;
+	flex-direction: row ;
+	flex-wrap: wrap ;
+	justify-content: space-around ;
+	align-items: center ;
+	align-content: center ;
+	text-align: center;
+}
+#formularioCursos #cursos-section input{
+    visibility: hidden;
+}
 /*
 #formularioCursos #datos-contacto input {
     width: 70%;
