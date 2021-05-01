@@ -1084,12 +1084,12 @@ button.boton:hover {
 	margin: auto auto 20px;
 	position: relative;
 }*/
-
-#cursos-section div{
+/*
+#cursos-section .divCurso{
     border-style: dashed;
     max-height: 15rem;
     max-width: 25rem;
-}
+}*/
 #cursos-section .imgCurso {
     float:center;
     max-width: 80%;
@@ -1098,6 +1098,12 @@ button.boton:hover {
     animation-name: animacionCursos;
     animation-duration: 3s;
     
+  }
+
+  #cursos-section .divCurso{
+      border-style: dashed;
+      border-radius: 1px;
+      height: 15rem;
   }
 #cursos-section .imgChecked{
     
@@ -1110,13 +1116,14 @@ button.boton:hover {
     z-index: 2;
     /*z-index:2;*/
 }
-#cursos-section article {
+#cursos-section section {
     overflow-y: scroll;
     max-height: 20rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    border-style: dotted;
 }
 #cursos-section .noSeleccionado, .seleccionado {
     margin: .5rem;

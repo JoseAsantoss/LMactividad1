@@ -1,13 +1,13 @@
-$("[name = cursoForm]").click(function () {
+$("[type = cursoForm]").click(function () {
     console.log("A")
     let classDiv = $(this).attr("class");
     let div = $(this)
     console.log(div)
     let checkBox = div.children("input")
     console.log(checkBox)
-    let imgLabel = div.children("label").children(".imgCurso")
+    let imgLabel = div.children("div").children(".imgCurso")
     console.log(imgLabel)
-    let imgCheck = div.children("label").children(".imgChecked")
+    let imgCheck = div.children("div").children(".imgChecked")
     console.log(imgCheck)
     if(classDiv == "noSeleccionado"){
         $(this).attr("class", "seleccionado")
