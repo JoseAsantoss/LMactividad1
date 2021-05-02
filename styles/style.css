@@ -1230,7 +1230,7 @@ button.boton:hover {
 	align-content: center ;
 	text-align: center;
 }
-#formularioCursos #cursos-section input, .imgChecked{
+#formularioCursos #cursos-section input{
     visibility: hidden;
 }
 
@@ -1247,7 +1247,7 @@ button.boton:hover {
     max-height: 15rem;
     max-width: 25rem;
 }*/
-#cursos-section .imgCurso {
+#cursos-section .imgCurso, .imgCheck{
     float:center;
     max-width: 80%;
     max-height: 70%;
@@ -1262,6 +1262,7 @@ button.boton:hover {
       border-radius: 1px;
       height: 15rem;
   }
+  /*
 #cursos-section .imgChecked{
     
     width: 3rem;
@@ -1271,8 +1272,9 @@ button.boton:hover {
     border-style: solid;
     float: center;
     z-index: 2;
-    /*z-index:2;*/
+    /*z-index:2;
 }
+*/
 #cursos-section section {
     overflow-y: scroll;
     max-height: 20rem;

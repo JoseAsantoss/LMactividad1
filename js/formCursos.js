@@ -1,21 +1,26 @@
 $("[type = cursoForm]").click(function () {
     let classDiv = $(this).attr("class");
     let div = $(this)
+    let divInterno = div.children("div")
     let checkBox = div.children("input")
     let imgLabel = div.children("div").children(".imgCurso")
-    let imgCheck = div.children("div").children(".imgChecked")
+    let imgCheck = div.children("div").children(".imgCheck")
+    console.log(imgCheck)
     if(classDiv == "noSeleccionado"){
         $(this).attr("class", "seleccionado")
         console.log("Vamos a seleccionado")
         checkBox.prop('checked', true);
         imgLabel.css({ filter: "brightness(50%) blur(2px)" })
-        imgCheck.css({ visibility: "visible" })
+        //imgCheck.css({ visibility: "visible" })
+        let img= $('<img class="imgCheck" src="../images/check.png">')
+        img.appendTo(divInterno)
     }else{
         $(this).attr("class", "noSeleccionado")
         console.log("Vamos a NOOOOO seleccionado")
         checkBox.prop('checked', false);
         imgLabel.css({ filter: "brightness(100%) blur(0px)" })
-        imgCheck.css({ visibility: "hidden" })
+        //imgCheck.css({ visibility: "hidden" })
+        imgCheck.remove();
     }
 })
 
