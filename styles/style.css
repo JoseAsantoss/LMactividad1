@@ -1237,7 +1237,7 @@ button.boton:hover {
     max-height: 15rem;
     max-width: 25rem;
 }*/
-#cursos-section .imgCurso, .imgCursoChecked {
+#cursos-section .imgCurso {
     float:center;
     max-width: 80%;
     max-height: 70%;
@@ -1247,9 +1247,6 @@ button.boton:hover {
     
   }
 
-  #cursos-section .imgCursoChecked{
-    display:none
-  }
   #cursos-section .divCurso{
       border-style: dashed;
       border-radius: 1px;

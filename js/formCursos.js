@@ -2,27 +2,29 @@ $("[type = cursoForm]").click(function () {
     let classDiv = $(this).attr("class");
     let div = $(this)
     let checkBox = div.children("input")
-    let imgNoCheck = div.children("div").children(".imgCurso")
-    let imgCheck = div.children("div").children(".imgCursoChecked")
+    let imgLabel = div.children("div").children(".imgCurso")
+    let imgCheck = div.children("div").children(".imgChecked")
     if(classDiv == "noSeleccionado"){
         $(this).attr("class", "seleccionado")
         console.log("Vamos a seleccionado")
         checkBox.prop('checked', true);
-        imgNoCheck.css("display","none")
-        imgCheck.css( "display", "")
+        imgLabel.css({ filter: "brightness(50%) blur(2px)" })
+        imgCheck.css({ visibility: "visible" })
     }else{
         $(this).attr("class", "noSeleccionado")
         console.log("Vamos a NOOOOO seleccionado")
         checkBox.prop('checked', false);
-        imgNoCheck.css("display","")
-        imgCheck.css( "display", "none")
+        imgLabel.css({ filter: "brightness(100%) blur(0px)" })
+        imgCheck.css({ visibility: "hidden" })
     }
 })
 
 $("input[type=radio][name=formacion-previa]").change(function() {
     console.log(this.value)
+    console.log("Ha entrado")
     let divFormacion = $("#otraFormacion")
     let cajaFormacion = divFormacion.children("#personal")
+    let otros = $("#formacOtros")
     if(this.value=="otros") {
         if(cajaFormacion.length == 0){
             console.log("Vamos a poner la caja")
