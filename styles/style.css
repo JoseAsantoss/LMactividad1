@@ -71,6 +71,55 @@ nav a:hover {
     color: #FAFAFA;
 }
 
+li.desplegable:hover>ul {
+    display: block;
+
+
+}
+
+/* .desplegable {
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative
+}
+
+ 
+.desplegable ul{
+    display:block;
+    flex-direction: row;
+    color:purple;
+}
+.desplegable li{
+    display:flex;
+    color:green;
+
+}
+.desplegable li a{
+    display:flex;
+    flex-direction: column;
+    text-decoration:none;
+    color: green;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    background-color: #254a74;
+}
+.desplegable:hover{
+    display:flex;
+}
+.desplegable ul li a:hover, .desplegable :hover {
+    display:block;
+    color: #FAFAFA;
+    background-color: #254a74;
+} */
+ 
+
+
 /* Sección principal */
 
 .main-section h1, 
@@ -215,13 +264,19 @@ nav a:hover {
     color: #1A3451;
     letter-spacing: .2rem;
 }
+.texto-cierre h4{ /* migue */
+    font-size: 1.5rem;
+    font-weight: 450;
+    color: #1A3451;
+    letter-spacing: .2rem;
+}
 .texto-cierre a{
     text-decoration: none;
     color:#E77218;
     background-color: #1A3451;
     border-style: solid;
     border-color:  #1A3451;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     padding: .3rem;
     margin-left: 0.5rem;
 }
@@ -261,6 +316,7 @@ nav a:hover {
     font-weight: 400;
     text-align: justify;
     margin-top: 1rem;
+    margin-bottom: 2rem;
     /* line-height: 3rem; */
 }
 
