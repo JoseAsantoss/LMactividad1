@@ -91,24 +91,28 @@
 
             <section id="formacion-previa">
                 <h3>Formación previa</h3>
-                <article>
-                    <div>
+                <article class="formacion-grid">
+                    <div class="posicion">
+                        <input type="radio" id="bat-logse" name="formacion-previa" value="eso">
+                        <label for="bat-logse">ESO</label>
+                    </div>
+                    <div class="posicion">
                         <input type="radio" id="bat-logse" name="formacion-previa" value="bat-logse">
                         <label for="bat-logse">Bachillerato LOGSE</label>
                     </div>
-                    <div>
+                    <div class="posicion">
                         <input type="radio" id="bat-exper" name="formacion-previa" value="bat-exper">
                         <label for="bat-exper">Bachillerato experimental</label>
                     </div>
-                    <div>
+                    <div class="posicion">
                         <input type="radio" id="cou" name="formacion-previa" value="cou">
                         <label for="cou">COU</label>
                     </div>
-                    <div>
+                    <div class="posicion">
                         <input type="radio" id="fp" name="formacion-previa" value="fp">
                         <label for="fp">Formación Profesional</label>
                     </div>
-                    <div id="otraFormacion">
+                    <div class="posicion" id="otraFormacion">
                         <input type="radio" id="formacOtros" name="formacion-previa" value="otros" onclick="">
                         <label for="otros">Otros</label>
                     </div>
@@ -123,6 +127,7 @@
                         <div class="divCurso">
                             <H5>Java</H5>
                             <img class="imgCurso" src="../images/cursos/java.png" alt="Imagen Java">
+                            <img class="imgCursoChecked" src="../images/cursos/java-check.png">
                         </div>
                     </article>
                     <article  name="java-ee" type="cursoForm" class="noSeleccionado">
@@ -130,12 +135,14 @@
                         <div class="divCurso">
                             <H5>Java EE</H5>
                             <img class="imgCurso" src="../images/cursos/java-ee.jpg" alt="Imagen Java EE">
+                            <img class="imgCursoChecked" src="../images/cursos/java-ee-check.jpg">
                         </div>
                     </article>
                     <article name="php" type="cursoForm" class="noSeleccionado">
                         <div class="divCurso">
                             <H5>PHP</H5>
                             <img class="imgCurso" src="../images/cursos/php.png" alt="Imagen PHP">
+                            <img class="imgCursoChecked" src="../images/cursos/php-check.png">
                         </div>
                     </article>
                     <article name="html" type="cursoForm" class="noSeleccionado">
@@ -143,6 +150,7 @@
                         <div class="divCurso">
                             <H5>HTML5</H5>
                             <img class="imgCurso" src="../images/cursos/html.png" alt="Imagen HTML">
+                            <img class="imgCursoChecked" src="../images/cursos/html-check.png">
                         </div>
                     </article>
                     <article  name="javascript" type="cursoForm" class="noSeleccionado">
@@ -150,6 +158,7 @@
                         <div class="divCurso">
                             <H5>JavaScript</H5>
                             <img class="imgCurso" src="../images/cursos/javascript.png" alt="Imagen JavaScript">
+                            <img class="imgCursoChecked" src="../images/cursos/javascript-check.png">
                         </div>
                     </article>
                     <article  name="css" type="cursoForm" class="noSeleccionado">
@@ -157,6 +166,7 @@
                         <div class="divCurso">
                             <H5>CSS3</H5>
                             <img class="imgCurso" src="../images/cursos/css.jpg" alt="Imagen CSS">
+                            <img class="imgCursoChecked" src="../images/cursos/css-check.jpg">
                         </div>
                     </article>
                     <article  name="mk-digital" type="cursoForm" class="noSeleccionado">
@@ -164,6 +174,7 @@
                         <div class="divCurso">
                             <H5>Marketing Digital</H5>
                             <img class="imgCurso" src="../images/cursos/mk-digital.jpg" alt="Imagen Marketing Digital">
+                            <img class="imgCursoChecked" src="../images/cursos/mk-digital-check.jpg">
                         </div>
                     </article>
                 </section>
