@@ -1462,9 +1462,10 @@ div.posicion {
   }
 
   #cursos-section .divCurso{
-      border-style: dashed;
-      border-radius: 1px;
-      height: 15rem;
+    border: 2px;  
+    border-style: dashed;
+    border-radius: 1px;
+    height: 15rem;
   }
   /*
 #cursos-section .imgChecked{
