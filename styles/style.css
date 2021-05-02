@@ -1373,7 +1373,7 @@ button.boton:hover {
     max-height: 15rem;
     max-width: 25rem;
 }*/
-#cursos-section .imgCurso, .imgCheck{
+#cursos-section .imgCurso, .imgCursoChecked{
     float:center;
     max-width: 80%;
     max-height: 70%;
