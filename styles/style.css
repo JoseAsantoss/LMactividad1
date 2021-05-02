@@ -1188,11 +1188,33 @@ button.boton:hover {
     
 }
 
-#formacion-previa div,
+
 #cursos-interesado div,
 #modalidad div {
     margin: .5rem .8rem;
 }
+
+article.formacion-grid div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-content:space-between;
+    width: 30%;
+    border: 2px dashed blue;
+    
+}
+/* HELP*/
+div.posicion {
+    padding-left: 10%;
+
+}
+
+.posicion > label  {
+    color: red !important;
+    border: 10px dashed salmon !important;
+    
+}
+/* FIN HELP*/
 
 #proteccion-datos a {
     text-decoration: none;
