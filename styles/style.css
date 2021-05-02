@@ -18,7 +18,7 @@ body {
 .container {
     height: 100%;
     display: grid;
-    grid-template-rows: 15vh 5vh min-content;
+    grid-template-rows: 15vh min-content min-content;
 }
 
 header {
@@ -64,7 +64,7 @@ nav a {
     color: #E77218;
     font-weight: 500;
     font-size: 1.2rem;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 2rem;
 }
 
 nav a:hover {
@@ -598,8 +598,7 @@ button.boton:hover {
 /* Sección Quiénes Somos - Álvaro */
 /*********************/
 
-/* Estilos para la imagen de fondo.
-   Fija, centrada, cubriendo la totalidad y sin repetirse */
+/* Imagen de fondo fija, centrada, cubriendo la totalidad y sin repetirse */
    .main-quienes-somos {
     background-attachment: fixed;
     background-size: cover;
@@ -684,35 +683,12 @@ button.boton:hover {
     height: 100%;
     border-radius: 1rem;
 }
-/* Botones carrusel
-.atras, .siguiente {
-    position: absolute;
-    width: auto;
-    color: #FAFAFA;
-    font-size: 2rem;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 1rem;
-}
-.atras:hover, .siguiente:hover {
-    color: #E77218;
-    background-color: rgba(0,0,0,0.7);
-}
-.atras {
-    top: 40%;
-    padding-left: 1rem;
-}
-.siguiente {
-    top: 40%;
-    right: 0;
-    padding-right: 1rem;
-}
-*/
+/* Texto debajo imagen carrusel */
 .texto-carrusel {
     position: absolute;
     bottom: 0;
     color: #FAFAFA;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
     width: 100%;
     background-color: #1A3451;
@@ -789,7 +765,7 @@ button.boton:hover {
     position: absolute;
     height: 100%;
     width: 100%;
-    margin: 2rem;
+   
     border-radius: 1.5rem;
     transition: all .5s ease;
     -webkit-transition: all .5s ease;
@@ -847,7 +823,8 @@ button.boton:hover {
 /* párrafos parte delantera de las tarjetas */
 .tarjeta-delante-qs p {
     color: #FAFAFA;
-    margin-top: 1.5rem;
+    margin: 1.5rem;
+    font-size: .9rem;
 }
 /* h3 parte trasera de las tarjetas */
 .tarjeta-detras-qs h3 {
@@ -868,6 +845,9 @@ button.boton:hover {
 }
 /* Ancho entre 900px y 1300px */
 @media only screen and (min-width: 900px) and (max-width: 1300px) {
+    .navbar a {
+        font-size: 1rem;
+    }
     .texto-carrusel {
         font-size: .8rem;
         padding: 1.1rem;
@@ -892,21 +872,37 @@ button.boton:hover {
 }
 /* Ancho máximo de 900px  */
 @media only screen and (max-width: 900px) {
+    .navbar a {
+        font-size: .9rem;
+    }
     .texto-carrusel {
         font-size: .7rem;
         padding: 1rem;
     }
 }
+/* Ancho máximo de 700px  */
+@media only screen and (max-width: 700px) {
+    .navbar a {
+        font-size: .8rem;
+        padding: 1rem;
+    }
+}
 /* Ancho máximo de 600px  */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
     .texto-carrusel {
         font-size: .6rem;
         padding: 1rem;
     }
 }
+/* Ancho máximo de 500px  */
+@media only screen and (max-width: 500px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
 /* iPhone X y smartphones similares (horizontal y vertical) */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) 
-       and (-webkit-min-device-pixel-ratio: 3) { 
+       and (-webkit-min-device-pixel-ratio: 3) {     
     .carrusel {
         width: 60%;
     }
