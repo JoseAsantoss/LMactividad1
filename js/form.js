@@ -1,9 +1,10 @@
-const form = document.getElementById('formulario');
 const submitButton = document.getElementById('submit-btn');
 
 let timeout = null;
 let errors = {
     nombre: true,
+    apellidos: true,
+    dni: true,
     email: true,
     telefono: true,
     texto: true,
@@ -39,6 +40,8 @@ const telformatRegex = /^[0-9/^[6|7|8|9]{1}[0-9]{8,8}$/;
 
 const caja = document.querySelectorAll('input.sp-form, textarea.sp-form');
 
+const caja2 = document.querySelectorAll('input');
+
 
 for(i = 0; i<caja.length; i++){
 
@@ -59,6 +62,27 @@ for(i = 0; i<caja.length; i++){
 
 };
 
+for(j=0; j<caja2.length; j++){
+    
+    if(caja2[j].name == 'nombre' || caja2[j].name == 'apellidos' || caja2[j].name == 'dni' || caja2[j].name == 'telefono' || caja2[j].name == 'e-mail'){
+        const evento2 = caja2[j];
+
+        evento2.addEventListener(
+            'keydown', 
+            function(event){
+                clearTimeout(timeout);
+                timeout = setTimeout(() => {
+                    console.log('input ${evento2.name} value: ', evento2.value);
+                }, 300);
+                console.log(evento2);
+                validation(evento2);
+            }
+        )
+
+    }
+}
+
+
 validation = (evento) => {
 
     if(evento.name == 'nombre'){
@@ -70,7 +94,25 @@ validation = (evento) => {
                
     } 
 
-    if(evento.name == 'email'){
+    if(evento.name == 'apellidos'){
+        if(!evento.value.match(nomformatRegex)){
+            mostrarError(true, evento);
+        }else{
+            mostrarError(false, evento);
+        }
+               
+    } 
+
+    if(evento.name == 'dni'){
+        /* if(!evento.value.match(nomformatRegex)){
+            mostrarError(true, evento);
+        }else{
+            mostrarError(false, evento);
+        } */
+               
+    } 
+
+    if(evento.name == 'email' || evento.name == 'e-mail'){
         if(!evento.value.match(mailformatRegex)){
             mostrarError(true, evento);
         }else{
@@ -90,11 +132,9 @@ validation = (evento) => {
     if(evento.name == 'texto') {
         console.log(evento.value);
         if(evento.value.length < 50 || evento.value.length > 1000){
-            console.log("Texto MAL, INÚTIL");
             mostrarError(true, evento);
 
         }else{
-            console.log("Texto OK");
             mostrarError(false, evento);
 
         }
@@ -115,7 +155,7 @@ mostrarError = (check, evento) => {
 
 submitControlador = () => {
     console.log(errors);
-    if(errors.nombre || errors.email || errors.telefono || errors.texto) {
+    if(errors.nombre || errors.apellidos || errors.dni || errors.email || errors.telefono || errors.texto) {
         submitButton.toggleAttribute('disabled', true);
     }else{
         submitButton.toggleAttribute('disabled', false);
