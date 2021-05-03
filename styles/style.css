@@ -59,7 +59,7 @@ nav ul {
     overflow: hidden;
 }
 
-nav a {
+.nav a {
     text-decoration: none;
     color: #E77218;
     font-weight: 500;
@@ -67,9 +67,34 @@ nav a {
     padding: 1rem 2rem;
 }
 
-nav a:hover {
+.nav a:hover {
     color: #FAFAFA;
 }
+/* Menu dropdawn*/
+li > ul {
+    display: none;
+    position: relative;
+    float: left;
+    overflow: visible;
+}
+
+li:hover > ul {
+    display: block;
+    width: 15%;
+    margin-left: 5%;
+    margin-top: 7%;
+}
+
+li > ul > li {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 4%;
+    margin-left: 250%;
+    background-color: #1a3451;
+    width: 80%;
+    left: 80%;
+}
+/*Fin dropdown*/
 
 /* Sección principal */
 

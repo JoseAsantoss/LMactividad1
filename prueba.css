@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+    font-size: 1rem;
+    width: 90%;
+    background-color: bisque;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+}
+
+li {
+    width: 20%;
+    float: left;
+    text-align: center;
+    list-style: none;
+    position: relative;
+}
+
+li a {
+    background-color: aquamarine;
+    color: fuchsia;
+    text-decoration: none;
+    padding: 4% 3%;
+    display: block;
+    width: 100%;
+}
+
+li a:hover {
+    background-color: fuchsia;
+    color: beige;
+}
+
+li > ul {
+    display: none;
+    position: relative;
+    float: left;
+}
+
+li:hover > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+li > ul > li {  
+ width: 190%;
+ padding: 1% 1%;
+ top: 1%;
+ left: 80%;
+
+}
+
+
