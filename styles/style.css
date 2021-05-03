@@ -740,9 +740,9 @@ aside {
     margin: 2rem 1rem;
 }
 
-#formularioCursos label {
+/* #formularioCursos label {
 
-}
+} */
 
 #formularioCursos #datos-contacto input, select {
     width: 65%;
@@ -782,6 +782,10 @@ aside {
 
 #datos-contacto input:focus:valid {
     border-bottom: 3px solid rgb(78, 218, 113);
+}
+
+.error {
+    background-color: rgba(255,153,153,0.7);
 }
 
 #datos-contacto .div-contenedor {
