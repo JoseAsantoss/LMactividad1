@@ -227,7 +227,7 @@
 /* párrafos parte delantera de las tarjetas */
 .tarjeta-delante-qs p {
     color: #FAFAFA;
-    margin: 1.5rem;
+    margin-top: .7rem;
     font-size: .9rem;
 }
 /* h3 parte trasera de las tarjetas */
@@ -301,9 +301,7 @@
 }
 /* Ancho máximo de 500px  */
 @media only screen and (max-width: 500px) {
-    nav ul {
-        flex-direction: column;
-    }
+
 }
 /* iPhone X y smartphones similares (horizontal y vertical) */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) 
