@@ -14,6 +14,7 @@
     <link rel="icon" type="image/svg+xml" href="../images/svg/icono.svg" sizes="any">
     <script defer src="../js/copy.js"></script>
     <script defer src="../js/formCursos.js"></script>
+    <script defer src="../js/navbar.js"></script>
     <script type="text/javascript" src="../libs/jquery-3.5.1.min.js"></script>
 </head>
 
@@ -23,18 +24,18 @@
             <img class="logo-header" src="../images/logo-svg.svg" alt="logo TERRITORIO WEB">
         </a>
     </header>
-    <nav class="navbar">
-        <ul class="nav">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="#">Que ofrecemos</a>
-                <ul>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                </ul>
-            </li>
-            <li><a href="about.html">Quiénes somos</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-        </ul>
+    <nav class="nav" id="menu">
+        <a href="../index.html">Inicio</a>
+        <div class="desplegable">Qué ofrecemos
+            <i class="fa fa-caret-down"></i>
+            <div class="desp-contenido">
+                <a href="servicios.html">Servicios</a>
+                <a href="cursos.html">Cursos</a>
+            </div>
+        </div>
+        <a href="about.html">Quiénes somos</a>
+        <a href="contact.html">Contacto</a>
+        <button class="icono" onclick="despliega()">&#9776;</button>
     </nav>
 
     <main id="mainCursos">
