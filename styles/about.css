@@ -1,0 +1,436 @@
+/*********************/
+/* Sección Quiénes Somos - Álvaro */
+/*********************/
+
+/* Imagen de fondo fija, centrada, cubriendo la totalidad y sin repetirse */
+.main-quienes-somos {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/fondo-qs.jpeg");
+    background-color: #777880;
+    background-blend-mode: screen;
+    overflow-x: hidden;
+}
+/* Para la sección principal, combino la imagen de fondo con un color gris
+   para darle un efecto donde el fondo queda en segundo plano y poco visible */
+.quienes-somos {
+    padding: .5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Contenedor carrusel */
+.carrusel {
+    position: relative;
+    width: 50%;
+    height: auto;
+    background-color: #1a3451;
+    box-shadow: .5rem .5rem .5rem .2rem rgba(11, 10, 44, 0.4);
+    margin-top: 1rem;
+    border-radius: 1rem;
+    animation: mostrar-carrusel .7s ease-in-out;
+    -webkit-animation: mostrar-carrusel .7s ease-in-out;
+    -moz-animation: mostrar-carrusel .7s ease-in-out;
+    -ms-animation: mostrar-carrusel .7s ease-in-out;
+}
+/* Animación de entrada carrusel */
+@keyframes mostrar-carrusel {
+    0% { 
+        opacity: 0; 
+        transform: scale3d(0.3, 0.3, 0.3);  
+    }
+    100% { 
+        opacity: 1; 
+        transform: scale3d(1,1,1);
+        }
+    }
+@-webkit-keyframes mostrar-carrusel {
+    0% { 
+        opacity: 0; 
+        -webkit-transform: scale3d(0.3, 0.3, 0.3); 
+        transform: scale3d(0.3, 0.3, 0.3); 
+    }
+    100% { 
+        opacity: 1; 
+        -webkit-transform: scale3d(1,1,1); 
+        transform: scale3d(1,1,1); 
+    }
+}
+/* Imágenes del carrusel ocultas, las muestro con JavaScript */
+.slides {
+    display: none;
+    position: relative;
+    animation: animacion-slide 1.5s;
+}
+/* Animación slides carrusel */
+@keyframes animacion-slide {
+    from {
+        opacity: .3;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes animacion-slide {
+    from {
+        opacity: .3;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Imágenes carrusel */
+.slides img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+/* Texto debajo imagen carrusel */
+.texto-carrusel {
+    position: absolute;
+    bottom: 0;
+    color: #FAFAFA;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    background-color: #1A3451;
+    padding: 1.2rem;
+    -webkit-animation: expandir-texto 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: expandir-texto 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+/* Animación para el texto del carrusel */
+@keyframes expandir-texto {
+    0% {
+        letter-spacing: -0.5em;
+    }
+}
+@-webkit-keyframes expandir-texto {
+    0% {
+        letter-spacing: -0.5em;
+    }
+}
+.contenedor-puntos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: .2rem;
+}
+.punto-carrusel {
+    display: inline-block;
+    height: .5rem;
+    width: .5rem;
+    background-color: #FAFAFA;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: .3rem;
+}
+.punto-carrusel:hover {
+    background-color: #E77218;
+}
+.punto-activo {
+    background-color: #E77218;
+}
+/* h3 para las dos primeras secciones */
+.quienes-somos h3 {
+    font-size: 1.5rem;
+    color: #E77218;
+    margin-bottom: .3rem;
+    font-weight: 400;
+}
+/* Aplico estilos similares a la sección principal */
+.seccion-tarjetas {
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+}
+/* Contenedor para las tarjetas con posición relativa.
+   Incluyo prefijo -webkit para evitar desajustes en algunos navegadores */
+.contenedor-tarjeta {
+    position: relative;
+    height: 25rem;
+    width: 18rem;
+    perspective: 100rem;
+    -webkit-perspective: 100rem;
+    margin: 4rem;
+}
+/* Efecto de rotación para las tarjetas sobre el eje "Y"
+   cuando el usuario haga un hover sobre ellas */
+.contenedor-tarjeta:hover .tarjeta-qs {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+/* Aplico la transición con su duración y estilo para las tarjetas */
+.tarjeta-qs {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+   
+    border-radius: 1.5rem;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    cursor: pointer;
+    box-shadow: .5rem .5rem .5rem .2rem rgba(11, 10, 44, 0.4);
+}
+/* Parte delantera de las tarjetas con posición absoluta, ocupando el 100% de su contenedor. */
+.tarjeta-delante-qs {
+    background-color: #1A3451;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+/* Parte trasera de las tarjetas con posición absoluta, ocupando el 100% de su contenedor.
+   Cuando el usuario termine el "hover", el eje "Y" volverá a rotar 180 grados. */
+.tarjeta-detras-qs {
+    background-color: #1A3451;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    border-radius: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Imágenes de la parte delantera de las tarjetas */
+.tarjeta-delante-qs img {
+    width: inherit;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+/* h3 parte delantera de las tarjetas */
+.tarjeta-delante-qs h3 {
+    color: #E77218;
+    font-weight: 400;
+    font-size: 1.5rem;
+    border-top: 2px solid #E77218;
+    border-bottom: 2px solid #E77218;
+    padding: .2rem;
+    letter-spacing: .08rem;
+}
+/* párrafos parte delantera de las tarjetas */
+.tarjeta-delante-qs p {
+    color: #FAFAFA;
+    margin: 1.5rem;
+    font-size: .9rem;
+}
+/* h3 parte trasera de las tarjetas */
+.tarjeta-detras-qs h3 {
+    color: #FAFAFA;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+
+/* MEDIA QUERIES */
+/* Dispositivos 1300px o más */
+@media only screen and (min-width: 1300px) {      
+    .carrusel {
+        width: 55%;
+    }
+    .texto-carrusel {
+        font-size: 1.3rem;
+        padding: 1.1rem;
+    }
+}
+/* Ancho entre 900px y 1300px */
+@media only screen and (min-width: 900px) and (max-width: 1300px) {
+    .navbar a {
+        font-size: 1rem;
+    }
+    .texto-carrusel {
+        font-size: .8rem;
+        padding: 1.1rem;
+    }
+    .contenedor-tarjeta {
+        height: 20rem;
+        width: 14rem;
+    }
+    .tarjeta-delante-qs h3 {
+        font-size: 1.2rem;
+    }
+    .tarjeta-delante-qs p {
+        font-size: .9rem;
+    }
+    .contenedor-tarjeta {
+        margin: 3rem;
+    }
+    .tarjeta-detras-qs .icono-redes {
+        width: 1.5rem;
+        height: 1rem;
+    }
+}
+/* Ancho máximo de 900px  */
+@media only screen and (max-width: 900px) {
+    .navbar a {
+        font-size: .9rem;
+    }
+    .texto-carrusel {
+        font-size: .7rem;
+        padding: 1rem;
+    }
+}
+/* Ancho máximo de 700px  */
+@media only screen and (max-width: 700px) {
+    .navbar a {
+        font-size: .8rem;
+        padding: 1rem;
+    }
+}
+/* Ancho máximo de 600px  */
+@media only screen and (max-width: 600px) {
+    .texto-carrusel {
+        font-size: .6rem;
+        padding: 1rem;
+    }
+}
+/* Ancho máximo de 500px  */
+@media only screen and (max-width: 500px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+/* iPhone X y smartphones similares (horizontal y vertical) */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) 
+       and (-webkit-min-device-pixel-ratio: 3) {     
+    .carrusel {
+        width: 60%;
+    }
+    .texto-carrusel {
+        font-size: .6rem;
+        padding: .5rem;
+    }
+    .contenedor-tarjeta {
+        height: 17rem;
+        width: 12rem;
+    }
+    .tarjeta-delante-qs h3 {
+        font-size: 1rem;
+    }
+    .tarjeta-delante-qs p {
+        font-size: .7rem;
+    }
+    .contenedor-tarjeta {
+        margin: 1rem;
+    }
+    .tarjeta-detras-qs .icono-redes {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+/* iPhone 6+/7+/8+ y smartphones similares (horizontal y vertical) */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px)
+       and (-webkit-min-device-pixel-ratio: 3) {
+    .carrusel {
+        width: 70%;
+    }
+    .texto-carrusel {
+        font-size: .5rem;
+        padding: .5rem;
+    }
+    .contenedor-tarjeta {
+        height: 17rem;
+        width: 12rem;
+    }
+    .tarjeta-delante-qs h3 {
+        font-size: 1rem;
+    }
+    .tarjeta-delante-qs p {
+        font-size: .7rem;
+    }
+    .contenedor-tarjeta {
+        margin: 1rem;
+    }
+    .tarjeta-detras-qs .icono-redes {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+/* iPhone 6/7/8 y smartphones similares (horizontal y vertical) */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) 
+       and (-webkit-min-device-pixel-ratio: 2)  { 
+    .carrusel {
+        width: 70%;
+    }
+    .texto-carrusel {
+        font-size: .6rem;
+        padding: .5rem;
+    }
+    .contenedor-tarjeta {
+        height: 17rem;
+        width: 12rem;
+    }
+    .tarjeta-delante-qs h3 {
+        font-size: 1rem;
+    }
+    .tarjeta-delante-qs p {
+        font-size: .7rem;
+    }
+    .contenedor-tarjeta {
+        margin: 1rem;
+    }
+    .tarjeta-detras-qs .icono-redes {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+/* iPhone 5 y dispositivos más pequeños (horizontal y vertical) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px)
+       and (-webkit-min-device-pixel-ratio: 2) {
+    .carrusel {
+        width: 70%;
+    }
+    .texto-carrusel {
+        font-size: .4rem;
+        padding: .5rem;
+    }
+    .contenedor-tarjeta {
+        height: 15rem;
+        width: 10rem;
+    }
+    .tarjeta-delante-qs h3 {
+        font-size: .8rem;
+    }
+    .tarjeta-delante-qs p {
+        font-size: .6rem;
+    }
+    .contenedor-tarjeta {
+        margin: 1rem;
+    }
+    .tarjeta-detras-qs .icono-redes {
+        width: .7rem;
+        height: .7rem;
+    }
+}
+/* iPad (horizontal y vertical) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+       and (-webkit-min-device-pixel-ratio: 2) { 
+    .contenedor-tarjeta {
+        height: 17rem;
+        width: 12rem;
+    }
+    .tarjeta-delante-qs h3 {
+        font-size: 1.2rem;
+    }
+    .tarjeta-delante-qs p {
+        font-size: .7rem;
+    }
+    .contenedor-tarjeta {
+        margin: 1rem;
+    }
+}
