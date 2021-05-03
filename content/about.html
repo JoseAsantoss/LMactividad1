@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="../images/svg/icono.svg" sizes="any">
     <script defer src="../js/carrusel.js"></script>
+    <script defer src="../js/navbar.js"></script>
 </head>
 <!-- La etiqueta body tendrá la clase "container" para la distribución del grid principal -->
 <body class="container">
@@ -20,18 +21,18 @@
         </a>
     </header>
     <!-- Navbar con enlaces a todas las secciones de la página -->
-    <nav class="navbar">
-        <ul class="nav">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="#">Que ofrecemos</a>
-                <ul>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                </ul>
-            </li>
-            <li><a href="about.html">Quiénes somos</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-        </ul>
+    <nav class="nav" id="menu">
+        <a href="../index.html">Inicio</a>
+        <div class="desplegable">Qué ofrecemos
+            <i class="fa fa-caret-down"></i>
+            <div class="desp-contenido">
+                <a href="servicios.html">Servicios</a>
+                <a href="cursos.html">Cursos</a>
+            </div>
+        </div>
+        <a href="about.html" class="activa">Quiénes somos</a>
+        <a href="contact.html">Contacto</a>
+        <button class="icono" onclick="despliega()">&#9776;</button>
     </nav>
     <!-- Etiqueta main que englobará el contenido principal de la página -->
     <main class="main-quienes-somos">

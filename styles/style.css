@@ -37,111 +37,113 @@ header {
     align-items: center;
 }
 
-.navbar {
-    grid-row: 2 / 3;
+/* NUEVO NAV */
+.nav {
     background-color: #1A3451;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: .5rem;
+    
 }
-
-nav ul {
-    display: flex;
-    width: 100vw;
-    flex-direction: row;
-    justify-content: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
+/* Links del menú */
 .nav a {
-    text-decoration: none;
-    color: #E77218;
-    font-weight: 500;
-    font-size: 1.2rem;
-    padding: 1rem 2rem;
-}
-
-.nav a:hover {
-    color: #FAFAFA;
-}
-/* Menu dropdawn*/
-li > ul {
-    display: none;
-    position: relative;
     float: left;
-    overflow: visible;
-}
-
-li:hover > ul {
     display: block;
-    width: 15%;
-    margin-left: 5%;
-    margin-top: 7%;
-}
-
-li > ul > li {
-    padding-top: 3%;
-    padding-bottom: 3%;
-    margin-top: 4%;
-    margin-left: 250%;
-    background-color: #1a3451;
-    width: 80%;
-    left: 80%;
-}
-/*Fin dropdown*/
-
-li.desplegable:hover>ul {
-    display: block;
-
-
-}
-
-/* .desplegable {
-    display:none;
-    flex-direction: column;
-    justify-content: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: relative
-}
-
- 
-.desplegable ul{
-    display:block;
-    flex-direction: row;
-    color:purple;
-}
-.desplegable li{
-    display:flex;
-    color:green;
-
-}
-.desplegable li a{
-    display:flex;
-    flex-direction: column;
-    text-decoration:none;
-    color: green;
-    font-weight: 500;
-    font-size: 1.2rem;
-    padding: 1rem 2rem;
-    background-color: #254a74;
-}
-.desplegable:hover{
-    display:flex;
-}
-.desplegable ul li a:hover, .desplegable :hover {
-    display:block;
+    text-decoration: none;
     color: #FAFAFA;
-    background-color: #254a74;
-} */
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: .5rem 2rem;
+}
+/* Desplegable del menú */
+.desplegable {
+    float: left;
+    overflow: hidden;
+    color: #FAFAFA;
+    background-color: #1A3451;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: .5rem 2rem;
+}
+/* Símbolo desplegable */
+.fa-caret-down {
+    margin-left: .5rem;
+}
+/* Contenido del desplegable */
+.desp-contenido {
+    display: none;
+    position: absolute;
+    background-color: #1A3451;
+    margin-top: .5rem;
+}
+/* Links del desplegable */
+.desp-contenido a {
+    text-decoration: none;
+    float: none;
+    display: block;
+    text-align: left;
+}
+/* Hover */
+.nav a:hover, .desplegable:hover {
+    background-color: #E77218;
+}
+/* Mostrar desplegable */
+.desplegable:hover .desp-contenido {
+    display: block;
+}
+/* Para la página activa */
+.activa {
+    background-color: #E77218;
+    color: #FAFAFA;
+}
+/* Escondemos el icono que desplegará el nav en dispositivos pequeños */
+.nav button {
+   display: none;
+}
+/* Media queries para el menú */
+@media screen and (max-width: 600px) {
+    .nav a, .desplegable {
+        display: none;
+    }
+    .nav button {
+        display: block;
+        font-size: 2rem;
+        padding: .2rem;
+        background-color: #1A3451;
+        color: #FAFAFA;
+        border: none;
+        cursor: pointer;
+        margin-left: .5rem;
+    }
+    /* Clase .responsivo habilitada mediante JavaScript */
+    .nav.responsivo {
+        position: relative;
+    }
+    .nav.responsivo button {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .nav.responsivo a {
+        display: block;
+        float: none;
+        text-align: left;
+        margin-left: 3rem;
+    }
+    .nav.responsivo .desplegable {
+        float: none;
+    }
+    .nav.responsivo .desp-contenido {
+        position: relative;
+    }
+    .nav.responsivo .desplegable {
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin-left: 3rem;
+    }
+    .nav.responsivo .desplegable:hover {
+        background-color: #1A3451;
+    }
+}
  
 
 
