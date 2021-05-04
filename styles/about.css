@@ -227,8 +227,9 @@
 /* párrafos parte delantera de las tarjetas */
 .tarjeta-delante-qs p {
     color: #FAFAFA;
-    margin-top: .7rem;
+    margin-top: 1rem;
     font-size: .9rem;
+    padding: 0 .5rem;
 }
 /* h3 parte trasera de las tarjetas */
 .tarjeta-detras-qs h3 {

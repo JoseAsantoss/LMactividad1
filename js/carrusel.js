@@ -14,7 +14,7 @@ function mostrarSlides(n) {
         slides[i].style.display="none";
     }
     indiceSlide++;
-    /* Si sobrepasa la longitud de slides, vuelva al índice 1 */
+    /* Si sobrepasa la longitud de slides, vuelve al índice 1 */
     if(indiceSlide > slides.length) {
         indiceSlide = 1;
     }
@@ -26,19 +26,6 @@ function mostrarSlides(n) {
 
     slides[indiceSlide-1].style.display="block";
     puntos[indiceSlide-1].className += " punto-activo";
-    /* Las slides irán cambiando cada 4 segundos */
+    /* Las slides irán cambiando cada 3.5 segundos */
     setTimeout(mostrarSlides, 3500);
 }
-
-/*
-Código por si implanto el carrusel manual.
-En principio lo dejo automático.
-
-function sumaSlides(n) {
-    mostrarSlides(indiceSlide += n);
-}
-
-function restaSlides(n) {
-    mostrarSlides(indiceSlide -= n)
-}
-*/
