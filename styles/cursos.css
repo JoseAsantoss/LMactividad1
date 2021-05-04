@@ -97,7 +97,8 @@
   }
 
 #seccion-video-cursos{
-    margin: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     animation-name: animacionCursos;
     animation-duration: 3s;
 }
@@ -136,17 +137,23 @@
 }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) 
-       and (-webkit-min-device-pixel-ratio: 3) {  
-    
-    #video-cursos {
-        width: 18rem;
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px)
+       and (-webkit-min-device-pixel-ratio: 3) {
+
+    #video-cursos{
+        width: 80vw;
     }
 
     #catalogo-cursos{
-        width: 15rem;
+        width: 90vw;
     }
 
+    .curso img{
+        align-self: center;
+
+
+    }
     .curso{
         flex-direction: column;
     }
@@ -156,26 +163,26 @@
     }
 
     .curso h4{
+        padding-top: 1.2rem;
         text-align: center;
 
     }
-
 }
-
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px)
        and (-webkit-min-device-pixel-ratio: 3) {
 
-    #video-cursos {
-        width: 20rem;
+    #video-cursos{
+        width: 80vw;
     }
 
     #catalogo-cursos{
-        width: 25rem;
+        width: 100vw;
     }
 
     .curso img{
-        text-align:center;
+        align-self: center;
+
 
     }
     .curso{
@@ -187,8 +194,8 @@
     }
 
     .curso h4{
+        padding-top: 1.2rem;
         text-align: center;
 
     }
 }
-
