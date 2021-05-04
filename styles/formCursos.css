@@ -230,6 +230,64 @@ hr {
     padding-bottom: 1%;
 }
 
-.lpd input:checked {
-    
+/*********************************/
+/* MEDIA QUERYS FORMULARIO CURSOS*/
+/*********************************/
+
+@media screen and (max-width: 600px) {
+    /* adaptamos el conendor a la pantalla*/
+    .container {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /* Fijamos el main al contenedor */
+    main#mainCursos {
+        width: 100%;
+        background-color: inherit;
+    }
+    /* Adaptamos la cabecera para que se adapte
+    a las nuevas dimensiones así como el h1*/
+    section.texto-presentacion {
+        width: 100vw !important;
+        margin-bottom: -10%;
+    }
+    section.texto-presentacion h1 {
+        font-size: 3rem;
+    }
+
+    /* adaptamos el formulario a las nuevas dimensiones*/
+
+    #datos-contacto article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .div-contenedor {
+        width: 98% !important;
+        
+    }
+
+    .div-contenedor div input {
+        width: 98% !important;
+    }
+
+    #formacion-previa {
+        margin-top: -0.12% !important;
+        margin-bottom: -0.12% !important;
+    }
+
+    #formacion-previa article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 98%;
+    }
+
+    .posicion {
+        width: 50% !important;
+        margin-left: 15%;
+        margin-right: -18%;
+    }
+
 }

@@ -44,6 +44,9 @@ prefijo usados en España, y tendrá otros 8 números, haciendo
 un teléfono de 9 dígitos típico de España*/
 const telformatRegex = /^[0-9/^[6|7|8|9]{1}[0-9]{8,8}$/;
 
+/* Expresión regular para validar el DNI o NIE. */
+const dniformatRegex = /^([a-z]|[A-Z]|[0-9])[0-9]{7}([a-z]|[A-Z]|[0-9])$/;
+
 const caja = document.querySelectorAll('input.sp-form, textarea.sp-form');
 
 const caja2 = document.querySelectorAll('input');
@@ -110,12 +113,11 @@ validation = (evento) => {
     } 
 
     if(evento.name == 'dni'){
-        /* if(!evento.value.match(nomformatRegex)){
+        if(!evento.value.match(dniformatRegex)){
             mostrarError(true, evento);
         }else{
             mostrarError(false, evento);
-        } */
-        mostrarError(false, evento);       
+        }
     } 
 
     if(evento.name == 'email'){
