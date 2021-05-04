@@ -14,6 +14,7 @@ let errors2 = {
     dni: true,
     email: true,
     telefono: true,
+    lpd: true,
 }
 
 /*La expresión regular de nombre establece que
@@ -89,6 +90,16 @@ for(j=0; j<caja2.length; j++){
         );
 
     }
+
+    if(caja2[j].name == 'lpd') {
+        const cb = document.getElementById('aceptar');
+
+        cb.addEventListener('click', 
+            function() {
+                console.log(cb.checked);
+               validation(cb);
+            })
+    }
 }
 
 
@@ -150,6 +161,18 @@ validation = (evento) => {
 
         }
     }
+
+    if(evento.name == 'lpd') {
+        console.log(evento.checked);
+        
+        if(!evento.checked){
+            mostrarError(true, evento);
+
+        }else{
+            mostrarError(false, evento);
+
+        }
+    }
     
     if(evento.name['texto']){
         submitControlador();
@@ -190,18 +213,12 @@ submitControlador = () => {
     };
 
 }
-const cb = document.getElementById('aceptar');
-
-cb.addEventListener('click', 
-    function() {
-       submitControlador2();
-    })
 
 
 submitControlador2 = () => {
     console.log(errors2);
     
-    if(errors2.nombre || errors2.apellidos || errors2.dni || errors2.email || errors2.telefono || !cb.checked) {
+    if(errors2.nombre || errors2.apellidos || errors2.dni || errors2.email || errors2.telefono || errors2.lpd) {
         submitButton.toggleAttribute('disabled', true);
     }else{
         console.log('entro pq todo es false');
