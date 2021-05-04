@@ -4,7 +4,7 @@ $(document).ready(function(){
         let divInterno = $(this).children("div")
         let imgCheck = divInterno.children(".imgCursoChecked")
         imgCheck.css( "display", "none")
-        console.log(imgCursoCheck)
+        console.log(imgCheck)
     })
 });
 
