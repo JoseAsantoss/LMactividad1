@@ -58,7 +58,7 @@ for(i = 0; i<caja.length; i++){
     if(caja[i].name == 'nombre' || caja[i].name == 'email' || caja[i].name == 'telefono' || caja[i].name == 'texto') {
         const evento = caja[i];
 
-        evento.addEventListener('keydown',
+        evento.addEventListener('keyup',
             function(event){
                 clearTimeout(timeout);
                 timeout = setTimeout(() => {
@@ -78,7 +78,7 @@ for(j=0; j<caja2.length; j++){
         const evento2 = caja2[j];
 
         evento2.addEventListener(
-            'keydown', 
+            'keyup', 
             function(event){
                 clearTimeout(timeout);
                 timeout = setTimeout(() => {
