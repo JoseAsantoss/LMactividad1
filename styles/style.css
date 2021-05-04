@@ -363,6 +363,36 @@ header {
 
 }
 
+.texto-cierre{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-cierre h4{ /* migue */
+    font-size: 1.5rem;
+    font-weight: 450;
+    color: #1A3451;
+    letter-spacing: .2rem;
+}
+.texto-cierre a{
+    text-decoration: none;
+    color:#E77218;
+    background-color: #1A3451;
+    border-style: solid;
+    border-color:  #1A3451;
+    border-radius: 0.5rem;
+    padding: .3rem;
+    margin-left: 0.5rem;
+}
+.texto-cierre a:hover{
+    color:  #1A3451;
+    background-color: #E77218;
+}
+
 /* Sección aside */
 aside {
     grid-column: 2 / 3; /* posicionamiento respecto al grid principal*/
