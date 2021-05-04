@@ -1,58 +1,79 @@
-
-
 /*
-********* Miguel RM *********
-*/
 
-/*
+******************************* Miguel RM ******************************
+
 ============================ SECCIÓN CURSOS ============================
+
 */
 
+/* El header, nav y footer están configurados desde la hoja principal */
+
+/*El main de cursos se configura desde aquí. Establecemos un fondo, un padding
+y un flex de columna, es decir, en vertical, con alineación al centro */
 #main-cursos{
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("../images/cursos/estudiante-bw.jpg");
-        padding: 5rem 0 10rem 0;
-        /*background-color: #777880;*/
-        background-color: #bdbfcc;
-        background-blend-mode: screen;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    padding: 5rem 0 10rem 0;
+    background-color: #bdbfcc;
+    background-blend-mode: screen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Respecto de la sección del vídeo, diferenciamos la sección
+del vídeo de cursos y el propio vídeo.
+
+Para el primero, asignamos márgenes y animación */
+#seccion-video-cursos{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    animation-name: animacionCursos;
+    animation-duration: 3s;
+}
+
+@keyframes animacionCursos {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Asignamos una sombra al vídeo */
+#video-cursos{
+    box-shadow: 0px 0px 30px rgb(41, 41, 41);
+
+}
+
+/* Ahora nos centraremos en la sección del catálogo de cursos, haremos otro flex
+con elemetos alineados al centro */
 #catalogo-cursos{
     display: flex;
     flex-wrap: wrap;
-    /*align-itrems: stretch;*/
     text-align: center;
     justify-content: center;
-    /*border-color: red;
-    border-style: dashed;*/
-
 }
 
-
+/*Ahora asignaremos para cada curso un flex interno para la imagen
+y el div con los dos textos, además de establecer un width, margin,
+padding y un borde redondeado */
 .curso {
     color:white;
-    /*border-color: red;
-    border-style: dashed;*/
     text-align: justify;
     display: flex;
-    /*align-itrems: center;
-    justify-content: center;*/
     background: #254A74;
     padding: 1rem;
     border-radius: 1em;
     width: 30rem;
-    /*height: 10rem;*/
     margin: 2rem 4rem;
 
-  }
+}
 
-  .curso:hover{
+/*Cuando hagamos hover sobre un curso, cambiará
+el fondo, la letra y una transición scale de 1,2 segundos
+*/
+.curso:hover{
     cursor: pointer;
     background-color: #dff2f5;
     color: black;
@@ -61,8 +82,10 @@
     transform: scale(1.2);
 
 }
-  #catalogo-cursos .imgCurso {
-    /*float:left;*/
+
+/* Introducimos una animación para la imagen del curso, con máximos
+de altura y anchura y una animación */
+#catalogo-cursos .imgCurso {
     max-width: 10rem;
     max-height: 10rem;
     border-radius: 1rem;
@@ -71,47 +94,31 @@
     
   }
   
-  /*-----------------*/
-
-  
-  @keyframes animacionCursos {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
+/* Ahora nos centraremos en el div de texto, introduciendo un pequeño margen izquierdo */
 .textoCurso{
     margin-left: 0.5rem;
 }
-  .textoCurso>h3{
-      /*      font-weight: bolder;
-*/
-      text-align: center;
-      padding: 0.5rem;
+  
+/* Alinearemos al centro el título h3, además de dar cierto padding */
+.textoCurso>h3{
+    text-align: center;
+    padding: 0.5rem;
 
-  }
-
-  .textoCurso>h4{
-      font-weight: lighter;
-      padding: 0.5rem;
-
-  }
-
-#seccion-video-cursos{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    animation-name: animacionCursos;
-    animation-duration: 3s;
 }
-  #video-cursos{
-      /*width: 40rem;*/
-      box-shadow: 0px 0px 30px rgb(41, 41, 41);
 
-  }
+/* Pondremos la fuente a light con el H4, y el padding, igual al de H3 */
+.textoCurso>h4{
+    font-weight: lighter;
+    padding: 0.5rem;
 
-  #catalogo-cursos{
+}
+
+/* Para toda la sección establecemos una animación, diferneciando de webkit */
+#catalogo-cursos{
     -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
 @-webkit-keyframes scale-in-center {
 0% {
     -webkit-transform: scale(0);
@@ -124,6 +131,7 @@
     opacity: 1;
 }
 }
+
 @keyframes scale-in-center {
 0% {
     -webkit-transform: scale(0);
@@ -138,6 +146,67 @@
 }
 
 
+/* ========================== MEDIA QUERIES ==========================*/
+
+/*Para anchuras superiores a 1300 px, establecemos ancho variable de 60vw*/
+@media only screen and (min-device-width: 1300px){
+
+    #video-cursos{
+        width: 60vw;
+    }
+
+    #main-cursos{
+        padding-top: 1.2rem;
+        padding-bottom: 5rem;
+    }
+}
+
+/*Para anchuras entre 900 y 1300 px, establecemos ancho fijo de 45 rem*/
+
+@media only screen and (min-device-width: 900px) and (max-device-width: 1300px){
+
+    #video-cursos{
+        width: 45rem;
+    }
+
+    #main-cursos{
+        padding-top: 1.2rem;
+        padding-bottom: 5rem;
+    }
+}
+
+/*Para pantallas entre 600 y 900 px de ancho, establecemos ancho variable ligeramente mayor,
+de 70vw*/
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 900px){
+
+    #video-cursos{
+        width: 70vw;
+    }
+    
+    #main-cursos{
+        padding-top: 1.2rem;
+        padding-bottom: 4rem;
+    }
+}
+
+/*Para pantallas inferiores a 600 px de ancho, establecemos ancho variable de 85vw*/
+@media only screen and (max-device-width: 600px){
+
+    #video-cursos{
+        width: 85vw;
+    }
+    
+}
+
+/* Respecto de la adaptación para iPhone X, vamos a limitar el ancho al 80%
+del ancho visible en el vídeo, y al 90% el catálogo de cursos, de manera que, 
+aproximadamente sean ambos del mismo ancho.
+
+Así mismo, respecto a los cursos, mostraremos la imagen en la parte superior centrada,
+en vez de a la izquierda; además de ocultar el título H3 y centrar el texto H4
+*/
+
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px)
        and (-webkit-min-device-pixel-ratio: 3) {
 
@@ -151,9 +220,8 @@
 
     .curso img{
         align-self: center;
-
-
     }
+
     .curso{
         flex-direction: column;
     }
@@ -165,9 +233,13 @@
     .curso h4{
         padding-top: 1.2rem;
         text-align: center;
-
     }
+
 }
+
+/* A grandes rasgos, la adaptación para iPhone 6/7/8 Plus 
+es igual a la de iPhone X; pero debido al estilo menos "estirado"
+de estos modelos, mostraremos los cursos más anchos */
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px)
        and (-webkit-min-device-pixel-ratio: 3) {
@@ -182,9 +254,8 @@
 
     .curso img{
         align-self: center;
-
-
     }
+
     .curso{
         flex-direction: column;
     }
@@ -196,6 +267,5 @@
     .curso h4{
         padding-top: 1.2rem;
         text-align: center;
-
     }
 }

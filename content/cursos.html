@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Página en la que detallamos los cursos que ofrecemos así como los que tenemos previsto impartir en un futuro próximo.">
+    <!-- Linkamos las hojas de estilo, tanto la general como la específica -->
     <link rel="stylesheet" type="text/css" href="../styles/style.css">
     <link rel="stylesheet" type="text/css" href="../styles/cursos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,18 +17,22 @@
         rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="../images/svg/icono.svg" sizes="any">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Importamos los scripts, empezando por jQuery, así como los scripts de cursos, y el correspondiente a la navbar
+    -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
     <script type="text/javascript" src="../js/cursos.js"></script>
     <script defer src="../js/navbar.js"></script>
-
 </head>
 
+<!-- La etiqueta body tendrá la clase "container" para la distribución del grid principal -->
 <body class="container">
+    <!-- En el header tendremos el logotipo de la empresa que enlazará al index.html si se clica -->
     <header>
         <a href="../index.html">
             <img class="logo-header" src="../images/logo-svg.svg" alt="logo TERRITORIO WEB">
         </a>
     </header>
+    <!-- Navbar con enlaces a todas las secciones de la página -->
     <nav class="nav" id="menu">
         <a href="../index.html">Inicio</a>
         <div class="desplegable">Qué ofrecemos
@@ -41,25 +46,35 @@
         <a href="contact.html">Contacto</a>
         <button class="icono" onclick="despliega()">&#9776;</button>
     </nav>
+
+    <!-- Esta es la etiqueta main, donde está en sí la parte de la web
+    de cursos-->
     <main id="main-cursos">
+        <!-- Internamente tendremos 3 secciones, la de texto de presentación,
+        que se rige por los estilos comunes-->
         <section class="texto-presentacion" id="cabecera-cursos">
             <h1>NUESTROS CURSOS</h1>
             <h2>Aprender nunca había sido tan maravilloso</h2>
         </section>
+        <!-- La sección de vídeo, que se rige por la hoja específica -->
         <section id="seccion-video-cursos">
             <video id="video-cursos" controls>
                 <source src="../videos/Territorio_Web.mp4" type=video/mp4>
             </video>
         </section>
+        <!-- Y por último la sección del catálogo de cursos-->
         <section id="catalogo-cursos">
+            <!-- Internamente, cada curso será un article
+            Vía jQuery, al hacer click en cualquiera, iremos al formulario de cursos -->
             <article class="curso" id="cursoJava">
+                <!-- Dentro, tendremos una imagen y un div de texto-->
                 <img class="imgCurso" src="../images/cursos/java.png" alt="Imagen Java">
                 <div class="textoCurso">
+                    <!-- Dicho div de texto tendrá el título del curso
+                    y una descripción del curso-->
                     <h3 class="titCurso">Java</h3>
                     <H4 class="texCurso">¿Eres nuevo en el mundo de la programación? ¡Conviértete en un experto de Java!
                         ¡Desde 0!</H4>
-                    <!--<input type="button" class="botonCurso" value="¡Quiero SEO!" class="button">
-                        -->
                 </div>
             </article>
             <article class="curso" id="cursoJavaEE">
@@ -68,8 +83,6 @@
                     <h3 class="titCurso">Java EE</h3>
                     <H4 class="texCurso">¿Quieres aprender lo que utilizan los servidores potentes? ¡Java Enterprise es
                         la respuesta!</H4>
-                    <!--<input type="button" class="botonCurso" value="¡Quiero SEO!" class="button">
-                        -->
                 </div>
             </article>
             <article class="curso" id="cursoPHP">
@@ -78,8 +91,6 @@
                     <h3 class="titCurso">PHP</h3>
                     <H4 class="texCurso">¿PHP? ¿Competencia de Java EE? Así es, ¡un lenguaje para entorno servidor mucho
                         más liviano e intuitivo! ¿Te animas?</H4>
-                    <!--<input type="button" class="botonCurso" value="¡Quiero SEO!" class="button">
-                        -->
                 </div>
             </article>
             <article class="curso" id="cursoHTML">
@@ -88,8 +99,6 @@
                     <h3 class="titCurso">HTML5</h3>
                     <H4 class="texCurso">¿No conoces HTML5? Todo lo que ves por aquí tiene un esqueleto... Pss pss
                         ¡HTML5!</H4>
-                    <!--<input type="button" class="botonCurso" value="¡Quiero SEO!" class="button">
-                        -->
                 </div>
             </article>
             <article class="curso" id="cursoJS">
@@ -98,8 +107,6 @@
                     <h3 class="titCurso">JavaScript</h3>
                     <H4 class="texCurso">¡Click aquí! ¡Click allá! ¡Conoce el lenguaje que le da la vida, el
                         funcionamiento a las webs! </H4>
-                    <!--<input type="button" class="botonCurso" value="¡Quiero SEO!" class="button">
-                        -->
                 </div>
             </article>
             <article class="curso" id="cursoCSS">
@@ -108,8 +115,6 @@
                     <h3 class="titCurso">CSS3</h3>
                     <H4 class="texCurso">¿Te gusta nuestra web? ¿O alguna otra? Dale las gracias a CSS3, ¡el sastre que
                         todos desean! ¡Únete ya!</H4>
-                    <!--<input type="button" class="botonCurso" value="¡Quiero SEO!" class="button">
-                        -->
                 </div>
             </article>
             <article class="curso" id="cursoSEO">
@@ -118,15 +123,15 @@
                     <h3 class="titCurso">Marketing Digital</h3>
                     <H4 class="texCurso">Descubre las ventajas del posicionamiento SEO y las campañas SEM. ¡Convierte tu
                         web en la líder del sector!</H4>
-                    <!--<input type="button" class="botonCurso" value="¡Quiero SEO!" class="button">
-                        -->
                 </div>
             </article>
         </section>
 
     </main>
 
+    <!-- Footer compuesto de tres secciones -->
     <footer>
+        <!-- Sección 1 del footer con iconos que enlazan a redes sociales -->
         <section class="footer-section-1">
             <a href="#"><img src="../images/svg/facebook-f-brands.svg" alt="icono facebook" class="icono-redes"></a>
             <a href="#"><img src="../images/svg/twitter-brands.svg" alt="icono twitter" class="icono-redes"></a>
@@ -134,6 +139,7 @@
             <a href="#"><img src="../images/svg/instagram-brands.svg" alt="icono instagram" class="icono-redes"></a>
             <a href="#"><img src="../images/svg/youtube-brands.svg" alt="icono youtube" class="icono-redes"></a>
         </section>
+       <!-- Sección 2 del footer con enlaces a las políticas de la empresa -->
         <section class="footer-section-2">
             <ul>
                 <li><a href="#">Términos y condiciones</a></li>
@@ -141,7 +147,7 @@
                 <li><a href="#">Política de privacidad</a></li>
             </ul>
         </section>
-
+        <!-- Sección 3 del footer con el copyright -->
         <section class="footer-section-3">
             <p>&copy; Copyright 2021. Todos los derechos reservados.</p>
         </section>
