@@ -222,12 +222,14 @@ hr {
     background: rgb(123, 168, 179); 
   }
 
+/* Sección LOPD */
 
-/*
-#formularioCursos #datos-contacto input {
-    width: 70%;
+.lpd {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1%;
 }
 
-#formularioCursos #datos-contacto input:focus{
-    width: 100%;
-}*/
+.lpd input:checked {
+    
+}

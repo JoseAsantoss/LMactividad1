@@ -83,7 +83,7 @@ for(j=0; j<caja2.length; j++){
                 console.log(evento2);
                 validation(evento2);
             }
-        )
+        );
 
     }
 }
@@ -154,6 +154,8 @@ validation = (evento) => {
     }else{
         submitControlador2();
     }
+
+
     
     
 };
@@ -176,22 +178,33 @@ mostrarError = (check, evento) => {
     }
 };
 
+
 submitControlador = () => {
     console.log(errors);
-    if(errors.nombre || errors.apellidos || errors.email || errors.telefono || errors.texto) {
+    if((errors.nombre || errors.apellidos || errors.email || errors.telefono || errors.texto)) {
         submitButton.toggleAttribute('disabled', true);
     }else{
         submitButton.toggleAttribute('disabled', false);
     };
 
 }
+const cb = document.getElementById('aceptar');
+
+cb.addEventListener('click', 
+    function() {
+       submitControlador2();
+    })
+
 
 submitControlador2 = () => {
     console.log(errors2);
-    if(errors2.nombre || errors2.apellidos || errors2.dni || errors2.email || errors2.telefono) {
+    
+    if(errors2.nombre || errors2.apellidos || errors2.dni || errors2.email || errors2.telefono || !cb.checked) {
         submitButton.toggleAttribute('disabled', true);
     }else{
+        console.log('entro pq todo es false');
         submitButton.toggleAttribute('disabled', false);
-    };
-}
+        };
+  
+};
 
