@@ -275,15 +275,26 @@ footer {
 }
 /* Ancho máximo de 700px  */
 @media only screen and (max-width: 700px) {
-
+    .footer-section-2 a {
+        font-size: .8rem;
+    }
 }
 /* Ancho máximo de 600px  */
 @media only screen and (max-width: 600px) {
-
+    .footer-section-2 a {
+        font-size: .7rem;
+        padding: 0 .7rem;
+    }
 }
 /* Ancho máximo de 500px  */
 @media only screen and (max-width: 500px) {
-
+    .footer-section-2 ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section-3 {
+        font-size: .7rem;
+    }
 }
 /* iPhone X y smartphones similares (horizontal y vertical) */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) 
