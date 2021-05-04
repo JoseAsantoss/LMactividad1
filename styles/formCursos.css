@@ -111,53 +111,38 @@ article.formacion-grid {
     color: #FAFAFA;
 }
 
+/* =============== SECCIÓN CURSOS =============== */
 #formularioCursos #cursos-section input{
     visibility: hidden;
 }
 
-/*#cursos-section article {
-	overflow-y: scroll;
-	max-height: 350px;
-	width: 90%;
-	margin: auto auto 20px;
-	position: relative;
-}*/
-/*
-#cursos-section .divCurso{
-    border-style: dashed;
-    max-height: 15rem;
-    max-width: 25rem;
-}*/
+#cursos-section article{
+    max-width: 18vw;
+    padding: 1.5rem;
+    
+}
 #cursos-section .imgCurso, .imgCursoChecked{
-    float:center;
-    max-width: 80%;
-    max-height: 70%;
+
+    max-width: 15vw;
     border-radius: 1rem;
-    animation-name: animacionCursos;
+    /*
+    float:center;
+    width: 80vw;
+*/
+    border-radius: 1rem;
+    animation-name: animacionCursos;    
     animation-duration: 3s;
     
-  }
-
-  #cursos-section .divCurso{
-
-    height: 15rem;
-  }
-  /*
-#cursos-section .imgChecked{
-    
-    width: 3rem;
-    padding: 0.3rem;
-	border-color: white;
-    border-radius: 1rem;
-    border-style: solid;
-    float: center;
-    z-index: 2;
-    /*z-index:2;
 }
-*/
+
+#cursos-section .divCurso{
+    height: 15rem;
+
+}
+
 #cursos-section section {
     overflow-y: scroll;
-    max-height: 20rem;
+    max-height: 25rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -165,6 +150,7 @@ article.formacion-grid {
     background-color: rgba(28, 31, 34, 0.3);
     border-radius: 1rem;
 }
+
 #cursos-section .noSeleccionado, .seleccionado {
     margin: .5rem;
     text-align: center;
@@ -176,6 +162,10 @@ article.formacion-grid {
 #modalidad article {
     display: flex;
     justify-content: center;
+}
+
+.divCurso{
+    padding: 0px;
 }
 /* Sección LOPD */
 
