@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgb(26, 52, 81);
+    background-color: rgba(26, 46, 70, 0.8);
     margin: 5rem;
     border-radius: 1rem;
     color: #FAFAFA;
@@ -162,7 +162,7 @@ article.formacion-grid {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgb(25, 26, 34);
+    background-color: rgba(28, 31, 34, 0.3);
     border-radius: 1rem;
 }
 #cursos-section .noSeleccionado, .seleccionado {
