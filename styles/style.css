@@ -263,15 +263,21 @@ footer {
 /* MEDIA QUERIES */
 /* Dispositivos 1300px o más */
 @media only screen and (min-width: 1300px) {      
-
+    .main-section h1, .quienes-somos h1, .texto-presentacion h1 {
+        font-size: 4.2rem;
+    }
 }
 /* Ancho entre 900px y 1300px */
 @media only screen and (min-width: 900px) and (max-width: 1300px) {
-
+    .main-section h1, .quienes-somos h1, .texto-presentacion h1 {
+        font-size: 4rem;
+    }
 }
 /* Ancho máximo de 900px  */
 @media only screen and (max-width: 900px) {
-
+    .main-section h1, .quienes-somos h1, .texto-presentacion h1 {
+        font-size: 3.5rem;
+    }
 }
 /* Ancho máximo de 700px  */
 @media only screen and (max-width: 700px) {
@@ -284,6 +290,9 @@ footer {
 }
 /* Ancho máximo de 600px  */
 @media only screen and (max-width: 600px) {
+    .main-section h1, .quienes-somos h1, .texto-presentacion h1 {
+        font-size: 3rem;
+    }
     .footer-section-2 a {
         font-size: .7rem;
         padding: 0 .7rem;
@@ -291,6 +300,9 @@ footer {
 }
 /* Ancho máximo de 500px  */
 @media only screen and (max-width: 500px) {
+    .main-section h1, .quienes-somos h1, .texto-presentacion h1 {
+        font-size: 2.5rem;
+    }
     .footer-section-2 ul {
         flex-direction: column;
         align-items: center;
