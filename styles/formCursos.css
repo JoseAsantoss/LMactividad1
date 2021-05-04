@@ -290,4 +290,14 @@ hr {
         margin-right: -18%;
     }
 
+    /* Sección cursos interesados */
+    #cursos-section section {
+        max-height: 30rem;
+    }
+
+    #cursos-section .noSeleccionado {
+        width: 40% !important;
+    }
+
+
 }
