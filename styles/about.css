@@ -250,11 +250,11 @@
 }
 /* Ancho entre 900px y 1300px */
 @media only screen and (min-width: 900px) and (max-width: 1300px) {
-    .navbar a {
-        font-size: 1rem;
+    .carrusel {
+        width: 70%;
     }
     .texto-carrusel {
-        font-size: .8rem;
+        font-size: 1rem;
         padding: 1.1rem;
     }
     .contenedor-tarjeta {
@@ -277,25 +277,27 @@
 }
 /* Ancho máximo de 900px  */
 @media only screen and (max-width: 900px) {
-    .navbar a {
-        font-size: .9rem;
+    .carrusel {
+        width: 80%;
     }
     .texto-carrusel {
-        font-size: .7rem;
+        font-size: .9rem;
         padding: 1rem;
     }
 }
 /* Ancho máximo de 700px  */
 @media only screen and (max-width: 700px) {
-    .navbar a {
-        font-size: .8rem;
-        padding: 1rem;
+    .carrusel {
+        width: 80%;
     }
 }
 /* Ancho máximo de 600px  */
 @media only screen and (max-width: 600px) {
+    .carrusel {
+        width: 90%;
+    }
     .texto-carrusel {
-        font-size: .6rem;
+        font-size: .8rem;
         padding: 1rem;
     }
 }
