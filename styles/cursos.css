@@ -8,7 +8,6 @@
 ============================ SECCIÓN CURSOS ============================
 */
 
-
 #main-cursos{
     background-attachment: fixed;
     background-size: cover;
@@ -22,15 +21,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    
 }
+
 #catalogo-cursos{
     display: flex;
     flex-wrap: wrap;
     /*align-itrems: stretch;*/
     text-align: center;
     justify-content: center;
-
     /*border-color: red;
     border-style: dashed;*/
 
@@ -64,7 +62,7 @@
 
 }
   #catalogo-cursos .imgCurso {
-    float:left;
+    /*float:left;*/
     max-width: 10rem;
     max-height: 10rem;
     border-radius: 1rem;
@@ -73,33 +71,38 @@
     
   }
   
+  /*-----------------*/
+
+  
   @keyframes animacionCursos {
     from {opacity: 0;}
     to {opacity: 1;}
 }
 
-  .textoCurso{
-      padding: 1rem;
-
-  }
+.textoCurso{
+    margin-left: 0.5rem;
+}
   .textoCurso>h3{
       /*      font-weight: bolder;
 */
       text-align: center;
-
+      padding: 0.5rem;
 
   }
 
   .textoCurso>h4{
       font-weight: lighter;
+      padding: 0.5rem;
+
   }
+
 #seccion-video-cursos{
     margin: 3rem;
     animation-name: animacionCursos;
     animation-duration: 3s;
 }
   #video-cursos{
-      width: 40rem;
+      /*width: 40rem;*/
       box-shadow: 0px 0px 30px rgb(41, 41, 41);
 
   }
@@ -132,3 +135,40 @@
     opacity: 1;
 }
 }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) 
+       and (-webkit-min-device-pixel-ratio: 3) {  
+    
+    /*body{
+        max-width: 15rem;
+    }
+    *//*
+    #main-cursos{
+        max-width: 20rem;
+
+    }*/
+
+    #video-cursos {
+        width: 18rem;
+    }
+
+    .curso{
+        width: 15rem;
+        /*margin: 1rem 1rem;*/
+
+    }
+
+    #catalogo-cursos{
+        width: 15rem;
+    }
+    #catalogo-cursos .imgCurso {
+        order: -1;
+    }
+
+    #catalogo-cursos .textoCurso{
+    }
+
+
+}
+
+
