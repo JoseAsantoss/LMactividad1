@@ -148,11 +148,12 @@ de altura y anchura y una animación */
 
 /* ========================== MEDIA QUERIES ==========================*/
 
-/*Para anchuras superiores a 1300 px, establecemos ancho variable de 60vw*/
+/*Para anchuras superiores a 1300 px, establecemos ancho variable de 60vw
+al vídeo. Optamos por mantener el ancho de las tarjetas fijo */
 @media only screen and (min-device-width: 1300px){
 
     #video-cursos{
-        width: 60vw;
+        width: 50vw;
     }
 
     #main-cursos{
@@ -196,6 +197,29 @@ de 70vw*/
     #video-cursos{
         width: 85vw;
     }
+    
+}
+
+/* iPad (horizontal y vertical)
+
+Limitamos el ancho del vídeo a 30 rem, quedando a mismo tamaño que las tarjetas
+de cada curso
+*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+       and (-webkit-min-device-pixel-ratio: 2) { 
+
+    #video-cursos{
+        width: 30rem;
+    }
+    
+    /*
+    #catalogo-cursos{
+        order = -1;
+    }
+
+    #seccion-video-cursos{
+        order = 1;
+    }*/
     
 }
 
