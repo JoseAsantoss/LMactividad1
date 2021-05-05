@@ -39,8 +39,7 @@ header {
 
 /* NAV - MENÚ */
 .nav {
-    background-color: #1A3451;
-    
+    background-color: #1A3451; 
 }
 /* Links del menú */
 .nav a {
@@ -145,7 +144,6 @@ header {
     }
 }
 
-
 /* Scrollbar */
 /* Tenemos una barra de scroll modificada para toda la web */
 
@@ -165,7 +163,6 @@ header {
     background: rgb(123, 168, 179); 
   }
 
- 
 /* Sección principal */
 .main-section h1, 
 .quienes-somos h1,
@@ -278,31 +275,6 @@ header {
     .footer-section-3 {
         font-size: .7rem;
     }
-}
-/* iPhone X y smartphones similares (horizontal y vertical) */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) 
-       and (-webkit-min-device-pixel-ratio: 3) {     
-
-}
-/* iPhone 6+/7+/8+ y smartphones similares (horizontal y vertical) */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px)
-       and (-webkit-min-device-pixel-ratio: 3) {
-
-}
-/* iPhone 6/7/8 y smartphones similares (horizontal y vertical) */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) 
-       and (-webkit-min-device-pixel-ratio: 2)  { 
-
-}
-/* iPhone 5 y dispositivos más pequeños (horizontal y vertical) */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px)
-       and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-/* iPad (horizontal y vertical) */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
-       and (-webkit-min-device-pixel-ratio: 2) { 
-
 }
 
 /*********************/
