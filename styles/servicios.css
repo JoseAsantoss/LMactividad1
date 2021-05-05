@@ -1,10 +1,19 @@
 /****************************/
 /* Sección Servicios - Raúl*/
 /****************************/
-.main-servicios{
-    background-color: #d5d3d3;
-}
 
+/*Estilos para el contenedor principal, contiene una imagen como  fondo de este*/ 
+.main-servicios{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/servicios/fondo-servicios.jpg");
+    background-color: #d5d3d3;
+    background-blend-mode: screen;
+
+}
+/*Estilos para el nombre de la empresa y un pequeño eslogan*/
 .texto-presentacion h1{
     color: #1A3451;
     font-size: 4rem;
@@ -21,6 +30,7 @@
     text-align: center;
     margin-top: .5rem;
 }
+/*Contenedor para ordenar las tarjetas con flexbox en sentido row(horizontal)*/
 .tarjetas {
     display: flex;
     flex-direction: row;
@@ -29,6 +39,8 @@
     padding-bottom: 5rem;
     width: 100vw;
 }
+/*Organizo cada una de las tarjetas con flexbox en sentido columnas(vertical)
+le damos sombra, márgenes, etc*/
 .tarjeta{
     display: flex;
     flex-direction: column;
@@ -41,11 +53,13 @@
     justify-content: center;
     box-shadow: .5rem .5rem .5rem .2rem rgba(11, 10, 44, 0.4);
 }
+/*efecto de las tarjetas al situar el puntero sobre ellas*/
 .tarjeta:hover{
     transform: translateY(-15px);
     box-shadow: .5rem .5rem .5rem .2rem rgba(11, 10, 44, 0.4);
     transition: .3s ease-in-out;
 }
+/*Estilos para los distintos elementos mostrados en las tarjetas */
 .tarjetas h4{
     color: #E77218;
     text-align: center;
@@ -55,6 +69,7 @@
     color: #FAFAFA;
     font-size: 0.9rem;
     margin: 1.5rem;
+  
 }
 .tarjeta img{
     height: 40%;
@@ -68,9 +83,11 @@
     border-top: 2px solid #E77218;
     padding: 0.5rem;
 }
+/*efecto del enlace "Más información" al situar el puntero sobre él*/
 .tarjeta a:hover{
     color: #FAFAFA;
 }
+/*Ordeno el texto de despedida con flexbox en sentido row(horizontal)*/
 .texto-cierre{
     display: flex;
     flex-direction: row;
@@ -79,12 +96,13 @@
     justify-content: center;
     align-items: center;
 }
+/*Ciertos estilos para los textos finales de la pagina*/ 
 .texto-cierre p{
     font-size: 2rem;
     color: #1A3451;
     letter-spacing: .2rem;
 }
-.texto-cierre h4{ /* migue */
+.texto-cierre h4{ 
     font-size: 1.5rem;
     font-weight: 450;
     color: #1A3451;
@@ -100,7 +118,69 @@
     padding: .3rem;
     margin-left: 0.5rem;
 }
+/*efecto del enlace "Hablemos" al situar el puntero sobre él*/
 .texto-cierre a:hover{
     color:  #1A3451;
     background-color: #E77218;
+}
+
+/*MEDIA QUERIES*/
+/* Ancho máximo de 700px  */
+@media only screen and (max-width: 700px) {
+    .texto-cierre p{
+        font-size: 1.5rem;
+    }
+}
+
+/* Ancho máximo de 600px  */
+@media only screen and (max-width: 600px) {
+    .texto-presentacion h1{
+        font-size: 3rem;
+    }
+    .texto-cierre p{
+        font-size: 1.3rem;
+    }
+    .texto-cierre a{
+        font-size: 0.8rem;
+    }
+}
+/* Ancho máximo de 500px  */
+@media only screen and (max-width: 500px) {
+    .texto-cierre p{
+        font-size: 1.1rem;
+    }
+    .texto-cierre a{
+        font-size: 0.7rem;
+    }
+}
+/* iPhone 5/SE  (horizontal y vertical) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) 
+{
+    
+        .tarjetas{   
+            padding-bottom: 1rem;       
+        }
+        
+        .texto-presentacion h1{
+            font-size: 1.5rem;
+        }   
+        .texto-presentacion h2{
+               font-size: 0.8rem;
+               margin: 0.5rem;
+        }
+        .tarjeta h4{
+            font-size: 0.9rem;
+            margin: 1rem;      
+        }
+        
+        .texto-cierre{
+            display: block;
+            text-align: center; 
+        }
+        .texto-cierre p{
+            font-size: 0.9rem;
+        }
+        .texto-cierre a{
+            font-size: 0.9rem;
+        } 
 }

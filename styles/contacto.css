@@ -5,7 +5,7 @@
 /*estilos para el contenedor main que engloba
 todos los elementos que están dentro del mismo*/
 .contenedor{
-    background-image: url(../images/fondo-qs-3.jpeg);
+    background-image: url(../images/about/fondo-qs-3.jpeg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -46,7 +46,6 @@ h2.simple-form{
 /* Estilo para los input y el textarea del formulario */
 input.sp-form, textarea.sp-form {
     width: 100%;
-    min-width: 480px;
     margin-bottom: 20px;
     padding: 7px;
     font-size: 1.2rem;
@@ -73,8 +72,9 @@ textarea.sp-form {
 
 .sp-form::placeholder{
     color: #E77218;
+    font-size: 1rem;
 }
-
+/* Si el valor introducido es incorrecto el fondo cambia de color */
 .error {
     background-color: rgba(255,153,153,0.7);
 
@@ -92,7 +92,8 @@ input.button {
     border: none;
     border-radius: 7px;
 }
-
+/* transición cuando el ratón está encima del botón para que cambie los colores y el 
+ratón cambie de forma */
 input.button, button.boton:hover {
     cursor: pointer;
 }
@@ -106,7 +107,6 @@ input.button:disabled{
 /******************************/
 section.dir-grid{
     width: 100%;
-    min-width: 480px;
     margin-right: auto;
     grid-column: 2 / 3;
 }
@@ -187,79 +187,60 @@ toda el grid*/
     max-height: 100%;
     min-height: 50%;
     border-radius: 30px;
-    border-color: inherit;
     padding: 6px;
 }
+/* Se quita el borde del iframe mediante CSS, ya que esta deprecated hacerlo en la propia
+etiqueta del iframe*/
+iframe {
+    border: none;
+}
+
 
 /******************************/
 /* MEDIA QUERYS ***************/
 /******************************/
-/* Pantalla de hasta 480px (37,5em) */
-@media screen and (max-width: 37.5em){
+/* Para pantallas con una resolución de hasta 600px */
+@media only screen and (max-width: 600px) {
 
-    .contenedor {
-        background-image: none;
-        background-color: inherit;
-    }
-
-    .contacto-grid {
-        clear: both;
-        display: block;
-        width: 96%;
-    }
-    form{
+    .container {
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
-    input.button{
-        width: 48%;
-        font-size: 0.7rem;
+    header{
+        width: 100% !important;
     }
 
-    input.sp-form, textarea.sp-form {
-        font-size: 0.7rem;
+    .contacto-grid{
+        display: flex;
+        flex-direction: column;
     }
 
-    .dir-grid {
-        width: 100%;
-        margin-left: 2%;
-        margin-top: -10%;
+    .simple-form {
+        width: 98% !important;
+        margin: 20px auto !important;
     }
 
     .dir-imagen {
-        clear: both;
-        margin-top: -1%;
-        margin-bottom: -3%;
-        margin-left: 10%;
-        padding: -2%;
+        margin-top: 5px !important;
     }
 
-    .direc {
-        font-size: 1.5rem;   
-    }
-
-    .boton {
-        padding: 5%;
-        font-size: 1.9rem
-    }
-
-    .mapa-contenedor {
-        clear: both;
-        width: 100%;
-        margin-left: 2%;
-        margin-bottom: 4%;
+    
+    .mapa-contenedor{
+        margin-bottom: 15px;
     }
 
     .mapa {
-        clear: both;
         width: 100%;
-        margin-top: 2%;
     }
-}
 
-/* @media screen and (min-width: 31em) and (max-width: 56.25em), (orientation:landscape) {
+    section.direc {
+        font-size: 1.5rem;
+    }
 
-
-}; */
+    input.button {
+        font-size: 1.2rem !important;
+    }
     
-
+}

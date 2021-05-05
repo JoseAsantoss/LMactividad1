@@ -1,7 +1,8 @@
 $(document).ready(function(){
     $("[type = cursoForm]").each(function(){
         console.log($(this))
-        let divInterno = $(this).children("div")
+        /*let divInterno = $(this).children("div")*/
+        let divInterno = $(this)
         let imgCheck = divInterno.children(".imgCursoChecked")
         imgCheck.css( "display", "none")
         console.log(imgCheck)
@@ -11,7 +12,8 @@ $(document).ready(function(){
 $("[type = cursoForm]").click(function () {
     let classDiv = $(this).attr("class");
     let div = $(this)
-    let divInterno = div.children("div")
+    /*let divInterno = div.children("div")*/
+    let divInterno = div;
     let checkBox = div.children("input")
     let imgNoCheck = divInterno.children(".imgCurso")
     let imgCheck = divInterno.children(".imgCursoChecked")
