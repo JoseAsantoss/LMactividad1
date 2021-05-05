@@ -5,7 +5,7 @@
 /*estilos para el contenedor main que engloba
 todos los elementos que están dentro del mismo*/
 .contenedor{
-    background-image: url(../images/fondo-qs-3.jpeg);
+    background-image: url(../images/about/fondo-qs-3.jpeg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -187,9 +187,13 @@ toda el grid*/
     max-height: 100%;
     min-height: 50%;
     border-radius: 30px;
-    border-color: inherit;
     padding: 6px;
 }
+
+iframe {
+    border: none;
+}
+
 
 /******************************/
 /* MEDIA QUERYS ***************/
