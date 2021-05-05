@@ -1,27 +1,27 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <title>TERRITORIO WEB</title>
-    <meta charset="UTF-8">
+<!DOCTYPE html><!-- definimos el lenguaje que vamos a utilizar, en nuesto caso html5 -->
+<html lang="es"> <!-- con esta etiqueta indicamos el idioma de la web -->
+<head><!-- en esta etiqueta añadimos los encabezados de la página, el usuario se abstrae de esto -->
+    <title>TERRITORIO WEB</title><!-- etiqueta que le da nombre a la web, aparece en la pestaña del navegador junto al favicon -->
+    <meta charset="UTF-8"> <!-- etiqueta meta para especificarle al navegador que codificación de carácteres vamos a utilizar, en nuestro caso UTF-8 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css"><!-- enlace que hacemos a la hoja de estilos independiente que define esta página -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="images/svg/icono.svg" sizes="any">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> <!-- definición de los textos -->
+    <link rel="icon" type="image/svg+xml" href="images/svg/icono.svg" sizes="any"> <!-- etiqueta en la que enlazamos el icono que aparecerá en la pesatña del navegador junto al title, llamado favicon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script defer src="js/navbar.js"></script>
+    <script defer src="js/navbar.js"></script><!-- enlazamos con la librería JavaScript -->
 </head>
-<body class="container">
-    <header>
-        <a href="index.html">
-            <img class="logo-header" src="images/logo-svg.svg" alt="logo TERRITORIO WEB">
+<body class="container"> <!-- esta etiqueta define el cuerpo de la web, lo que ve el usuario-->
+    <header><!-- etiqueta cabecera, contiene el logo y una imgen de fondo -->
+        <a href="index.html"> 
+            <img class="logo-header" src="images/logo-svg.svg" alt="logo TERRITORIO WEB"> <!-- utilizamos esta imagen como enlace a la dirección index.html -->
         </a>
     </header>
 
-    <nav class="nav" id="menu">
+    <nav class="nav" id="menu"> <!-- etiqueta navegador, hemos colocado los enlaces a las demás páginas de la web -->
         <a href="index.html" class="activa">Inicio</a>
-        <div class="desplegable">Qué ofrecemos
+        <div class="desplegable">Qué ofrecemos <!-- creamos un desplegable, desde el cual podemos acceder a las páginas Servicios y Cursos -->
             <i class="fa fa-caret-down"></i>
             <div class="desp-contenido">
                 <a href="content/servicios.html">Servicios</a>
@@ -30,13 +30,13 @@
         </div>
         <a href="content/about.html">Quiénes somos</a>
         <a href="content/contact.html">Contacto</a>
-        <button class="icono" onclick="despliega()">&#9776;</button>
+        <button class="icono" onclick="despliega()">&#9776;</button><!-- Botón que se despliega con enlace al resto de las páginas de nuestra web -->
     </nav>
 
-    <!-- Elemento principal de la página, es única en la estructura de nuestra web.
-        El resto de elementos de esta página son elementos comunes como el <head>, <header>, <nav> y <footer>-->
-    <main class="main-index"> 
-        <section class="main-section">
+    <!-- Elemento principal de la página, es única en la estructura de la página actual.
+        El resto de elementos de esta página son comunes, como el <head>, <header>, <nav> y <footer>-->
+    <main class="main-index"> <!-- le damos al main el nombre de una clase para darle estilo desde el archivo css -->
+        <section class="main-section"> <!-- Es la parte principal del main. Aquí aparece lo importante de la página -->
             <article> <!-- Cabecera de la sección que animamos asignándole estilos css al h1 y h2-->
                 <h1>TERRITORIO WEB</h1>
                 <h2>Nuestro ADN es comprometido, colaborativo y resolutivo.</h2>
@@ -44,23 +44,18 @@
             <article> <!-- Artículo que dividimos en divs para crear texto informativo con imagen y zona con la cual accederemos a la página de contacto-->
                 <div>
                     <img src="images/index01.jpg" width=500px alt="Imagen presentacion">
-                    <p>La consultoría tecnológica es un campo que se enfoca en aconsejar a otras empresas cómo usar las tecnologías de la información para conseguir sus objetivos empresariales. Adicionalmente, estiman, gestionan, implementan, instalan y administran los sistemas informáticos en régimen de subcontratación.</p>
-                    <p>A día de hoy, en un mundo en continua evolución tecnológica, donde las herramientas informáticas son la base de la mayoría de las empresas, es preciso contar con profesionales que puedan ofrecernos consultoría informática. Y es que estar al día de las novedades tecnológicas y, más aún, aplicarlas a nuestra sistemática de trabajo, requiere una dedicación casi imposible de asumir no sólo para un autónomo, sino para cualquier tiempo de negocio.</p>
-                    <p>Así surge el concepto de consultoría informática. Los profesionales de este ámbito, identifican las necesidades y debilidades en materia informática de las empresas, analizan sus procesos de trabajo y ofrecen propuestas ajustadas al sistema de trabajo y al presupuesto de la compañía.</p>
-                    <p>Pero su trabajo no termina ahí. Posteriormente, la consultoría informática debe mantener un seguimiento tanto de la empresa como de las nuevas tecnologías para ofrecer nuevas posibilidades o asegurarse de que los sistemas establecidos funcionan con la mejor eficiencia.</p>
-                    <p>La consultoría tecnológica es un campo que se enfoca en aconsejar a otras empresas cómo usar las tecnologías de la información para conseguir sus objetivos empresariales. Adicionalmente, estiman, gestionan, implementan, instalan y administran los sistemas informáticos en régimen de subcontratación. </p>
-                    <p>A día de hoy, en un mundo en continua evolución tecnológica, donde las herramientas informáticas son la base de la mayoría de las empresas, es preciso contar con profesionales que puedan ofrecernos consultoría informática. Y es que estar al día de las novedades tecnológicas y, más aún, aplicarlas a nuestra sistemática de trabajo, requiere una dedicación casi imposible de asumir no sólo para un autónomo, sino para cualquier tiempo de negocio.</p>
-                    <p>Así surge el concepto de consultoría informática. Los profesionales de este ámbito, identifican las necesidades y debilidades en materia informática de las empresas, analizan sus procesos de trabajo y ofrecen propuestas ajustadas al sistema de trabajo y al presupuesto de la compañía.</p>
-                    <p>Pero su trabajo no termina ahí. Posteriormente, la consultoría informática debe mantener un seguimiento tanto de la empresa como de las nuevas tecnologías para ofrecer nuevas posibilidades o asegurarse de que los sistemas establecidos funcionan con la mejor eficiencia.</p>
+                    <p>La consultoría tecnológica es un campo que se enfoca en aconsejar a otras empresas cómo usar las tecnologías de la información para conseguir sus objetivos empresariales. Adicionalmente, estiman, gestionan, implementan, instalan y administran los sistemas informáticos en régimen de subcontratación. A día de hoy, en un mundo en continua evolución tecnológica, donde las herramientas informáticas son la base de la mayoría de las empresas, es preciso contar con profesionales que puedan ofrecernos consultoría informática. Y es que estar al día de las novedades tecnológicas y, más aún, aplicarlas a nuestra sistemática de trabajo, requiere una dedicación casi imposible de asumir no sólo para un autónomo, sino para cualquier tiempo de negocio. Así surge el concepto de consultoría informática. Los profesionales de este ámbito, identifican las necesidades y debilidades en materia informática de las empresas, analizan sus procesos de trabajo y ofrecen propuestas ajustadas al sistema de trabajo y al presupuesto de la compañía. Pero su trabajo no termina ahí. Posteriormente, la consultoría informática debe mantener un seguimiento tanto de la empresa como de las nuevas tecnologías para ofrecer nuevas posibilidades o asegurarse de que los sistemas establecidos funcionan con la mejor eficiencia.</p>
+                    <p>La consultoría tecnológica es un campo que se enfoca en aconsejar a otras empresas cómo usar las tecnologías de la información para conseguir sus objetivos empresariales. Adicionalmente, estiman, gestionan, implementan, instalan y administran los sistemas informáticos en régimen de subcontratación. A día de hoy, en un mundo en continua evolución tecnológica, donde las herramientas informáticas son la base de la mayoría de las empresas, es preciso contar con profesionales que puedan ofrecernos consultoría informática. Y es que estar al día de las novedades tecnológicas y, más aún, aplicarlas a nuestra sistemática de trabajo, requiere una dedicación casi imposible de asumir no sólo para un autónomo, sino para cualquier tiempo de negocio.</p>
+                    <p>Así surge el concepto de consultoría informática. Los profesionales de este ámbito, identifican las necesidades y debilidades en materia informática de las empresas, analizan sus procesos de trabajo y ofrecen propuestas ajustadas al sistema de trabajo y al presupuesto de la compañía. Pero su trabajo no termina ahí. Posteriormente, la consultoría informática debe mantener un seguimiento tanto de la empresa como de las nuevas tecnologías para ofrecer nuevas posibilidades o asegurarse de que los sistemas establecidos funcionan con la mejor eficiencia.</p>
                     <p>No dude en consultarnos.</p>
                 </div>
                 <div class="texto-cierre">
                     <h4 class="texto-cierre">¿Necesitas nuestros servicios?</h4>
-                    <a class="texto-cierre" href="content/contact.html">Hablemos</a>
+                    <a class="texto-cierre" href="content/contact.html">Hablemos</a> <!-- enlace que nos lleva a la página de contacto -->
                 </div>
             </article>
-            <article>
-                <div class="prueba">
+            <article> <!-- tercer artículo de SECTION -->
+                <div class="prueba"> <!-- le damos un nombre diferente a la clase, para poder modificar esta independientemente de las demás -->
                     <p>
                         <img src="images/global_green.jpg" alt="Imagen articulo">
                     </p>
@@ -74,10 +69,10 @@
             </article>
         </section>
 
-        <aside> <!-- Código del ASIDE -->
+        <aside> <!-- El aside es la parte menos importante del main, suele tener artículos de publicidad o contenidos diferentes a la sección principal -->
             <section class="noticias">
                 <article>
-                    <div class="cabecera-noticias">
+                    <div class="cabecera-noticias"> <!-- asignamos un nombre a esta clase para estilizarla desde el arhivo  -->
                         <p>Para estar informado</p>
                     </div>
                     </article>
