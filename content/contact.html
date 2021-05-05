@@ -42,7 +42,7 @@
         <!-- Sección que hace de contenedor global para manejar el grid -->
         <section class="contacto-grid">
             <!-- Formulario de contacto -->                   
-            <form class="simple-form" id="formulario" name="consulta" action="">
+            <form class="simple-form" action="" method="POST" id="formulario" name="consulta">
                 <h2 class="simple-form">Formulario de contacto</h2>
                 <label for="nombre"></label>
                 <input maxlength="20" type="text" class="sp-form" name="nombre" id="nombre" autofocus placeholder="Nombre - Campo obligatorio" required>
@@ -52,7 +52,7 @@
                 <label for="telefono"></label>
                 <input type="tel" class="sp-form" name="telefono" id="telefono" placeholder="Teléfono movil">
                 <label for="texto"></label>
-                <textarea class="sp-form" name="texto" id="texto" cols="30" rows="8" placeholder="Escribe aquí tu consulta...(Campo obligatorio)" required></textarea>
+                <textarea class="sp-form" name="texto" id="texto" cols="30" rows="8" placeholder="Escribe aquí tu consulta...(Campo obligatorio - mínimo 50 caracteres)" required></textarea>
                 <input class="button" type="reset" value="Borrar">
                 <input class="button" type="submit" id="submit-btn" value="Enviar" disabled>
             </form> 
@@ -76,7 +76,7 @@
             </section>
                 <!-- Sección para el mapa de localización-->
             <section class="mapa-contenedor">
-                <iframe class="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1LE5XXixJ34JecorrHz2wLdDFEsg5Du7U" frameborder="0"></iframe>
+                <iframe class="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1LE5XXixJ34JecorrHz2wLdDFEsg5Du7U"></iframe>
             </section>  
         </section>
     </main>

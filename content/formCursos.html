@@ -46,7 +46,7 @@
             <h1>FORMULARIO</h1>
             <h2>¿Qué cursos te interesan?</h2>
         </section>
-        <form action="" method="" id="formularioCursos">
+        <form action="../php/formulario.php" method="POST" id="formularioCursos">
             <section id="datos-contacto">
                 <h3>Datos Personales</h3>
                 <article>
@@ -130,37 +130,37 @@
                 <h3>Cursos en los que estás interesado</h3>
                 <section id="cursos-caja">
                     <article name="java" type="cursoForm" class="noSeleccionado">
-                        <input type="checkbox" id="javaSelect" name="cursos" value="java">
+                        <input type="checkbox" id="javaSelect" name="cursos[]" value="java">
                         <img class="imgCurso" src="../images/cursos/java.png" alt="Imagen Java">
                         <img class="imgCursoChecked" src="../images/cursos/java_tick.jpg">
                     </article>
                     <article name="java-ee" type="cursoForm" class="noSeleccionado">
-                        <input type="checkbox" id="java-eeSelect" name="cursos" value="java-ee">
+                        <input type="checkbox" id="java-eeSelect" name="cursos[]" value="java-ee">
                         <img class="imgCurso" src="../images/cursos/java-ee.jpg" alt="Imagen Java EE">
                         <img class="imgCursoChecked" src="../images/cursos/java-ee_tick.jpg">
                     </article>
                     <article name="php" type="cursoForm" class="noSeleccionado">
-                        <input type="checkbox" id="phpSelect" name="cursos" value="php">
+                        <input type="checkbox" id="phpSelect" name="cursos[]" value="php">
                         <img class="imgCurso" src="../images/cursos/php.png" alt="Imagen PHP">
                         <img class="imgCursoChecked" src="../images/cursos/php_tick.jpg">
                     </article>
                     <article name="html" type="cursoForm" class="noSeleccionado">
-                        <input type="checkbox" id="html5Select" name="cursos" value="html5">
+                        <input type="checkbox" id="html5Select" name="cursos[]" value="html5">
                         <img class="imgCurso" src="../images/cursos/html.png" alt="Imagen HTML">
                         <img class="imgCursoChecked" src="../images/cursos/html_tick.jpg">
                     </article>
                     <article name="javascript" type="cursoForm" class="noSeleccionado">
-                        <input type="checkbox" id="javascriptSelect" name="cursos" value="javascript">
+                        <input type="checkbox" id="javascriptSelect" name="cursos[]" value="javascript">
                         <img class="imgCurso" src="../images/cursos/javascript.png" alt="Imagen JavaScript">
                         <img class="imgCursoChecked" src="../images/cursos/javascript_tick.jpg">
                     </article>
                     <article name="css" type="cursoForm" class="noSeleccionado">
-                        <input type="checkbox" id="css3Select" name="cursos" value="css3">
+                        <input type="checkbox" id="css3Select" name="cursos[]" value="css3">
                         <img class="imgCurso" src="../images/cursos/css.jpg" alt="Imagen CSS">
                         <img class="imgCursoChecked" src="../images/cursos/css_tick.jpg">
                     </article>
                     <article name="mk-digital" type="cursoForm" class="noSeleccionado">
-                        <input type="checkbox" id="mk-digitalSelect" name="cursos" value="mk-digital">
+                        <input type="checkbox" id="mk-digitalSelect" name="cursos[]" value="mk-digital">
                         <img class="imgCurso" src="../images/cursos/mk-digital.jpg" alt="Imagen Marketing Digital">
                         <img class="imgCursoChecked" src="../images/cursos/mk-digital_tick.jpg">
                     </article>
