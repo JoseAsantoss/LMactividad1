@@ -195,7 +195,7 @@ de 70vw*/
 @media only screen and (max-device-width: 600px){
 
     #video-cursos{
-        width: 85vw;
+        width: 100vw;
     }
     
 }
@@ -211,15 +211,6 @@ de cada curso
     #video-cursos{
         width: 30rem;
     }
-    
-    /*
-    #catalogo-cursos{
-        order = -1;
-    }
-
-    #seccion-video-cursos{
-        order = 1;
-    }*/
     
 }
 
