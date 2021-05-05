@@ -473,5 +473,5 @@ DEL FORMULARIO */
 
 ul.datos {
     margin-left: 30%;
-    list-style: lower-alpha;
+    list-style: square;
 }

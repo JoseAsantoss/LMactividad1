@@ -36,7 +36,7 @@
 error_reporting(0);
 $nombre = $_POST['nombre'];
 $apellidos = $_POST['apellidos'];
-$dni = md5(md5(htmlspecialchars($_POST['dni'])));
+$dni =$_POST['dni'];
 $fecha = $_POST['fecha_nacimiento'];
 $domicilio = $_POST['domicilio'];
 $cp = $_POST['codigo_postal'];
@@ -91,8 +91,8 @@ $modalidad = $_POST['modalidad'];
                             }else{
                                 echo 'El campo formación está vacio';
                             }?></li>
-                    <li><?php if($cursos != null){
-                                echo 'Cursos: '. $cursos;
+                    <li><?php if($mostrar != null){
+                                echo 'Cursos: '. $mostrar;
                             }else{
                                 echo 'El campo cursos está vacio';
                             }?></li>
