@@ -467,3 +467,11 @@ footer {
     justify-content: center;
     margin: 3rem;
 }
+
+/* ESTE APARTADO ES SÓLO PARA EL UL DE LA RECEPCIÓN DE DATOS
+DEL FORMULARIO */
+
+ul.datos {
+    margin-left: 30%;
+    list-style: lower-alpha;
+}
