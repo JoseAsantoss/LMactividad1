@@ -21,9 +21,9 @@
 
     <nav class="nav" id="menu"> <!-- etiqueta navegador, hemos colocado los enlaces a las demás páginas de la web -->
         <a href="index.html" class="activa">Inicio</a>
-        <div class="desplegable">Qué ofrecemos <!-- creamos un desplegable, desde el cual podemos acceder a las páginas Servicios y Cursos -->
+        <div class="desplegable" id="desp" onclick="muestraDesplegable()">Qué ofrecemos <!-- creamos un desplegable, desde el cual podemos acceder a las páginas Servicios y Cursos -->
             <i class="fa fa-caret-down"></i>
-            <div class="desp-contenido">
+            <div class="desp-contenido" id="desp-cont">
                 <a href="content/servicios.html">Servicios</a>
                 <a href="content/cursos.html">Cursos</a>
             </div>
